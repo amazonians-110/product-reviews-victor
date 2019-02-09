@@ -23,50 +23,30 @@ const reviewSchema = new Schema({
   images: [],
   verified_purchase: Boolean,
   helpful_counter: Number,
-  created_at: Date
+  created_at: String
 })
 
 //Compile a model Review from the Schema
 let Review = mongoose.model('Review', reviewSchema);
 //'Review' is the model
 
-//need to create 100 instances of the model Review. basically 100 unique items
-
-let allReviews = [];
-for (var i = 1; i <=100; i++) {
-  var review_instance = new Review({
-    product_id: data.product_id[i],
-    category: data.category[Math.floor(Math.random() * data.category.length)],
-    product_name: data.product_name[i],
-    product_ratings: Math.floor(Math.random() * 5) + 1,
-    review: data.review[i],
-    review_title: data.review_title[i],
-    reviewer: data.reviewer[i],
-    images: data.images[i],
-    verified_purchase: data.verified_purchase[Math.floor(Math.random() * data.verified_purchase.length)],
-    helpful_counter: data.helpful_counter[i],
-    created_at: data.created_at[i]
-  })
-  allReviews.push(review_instance);
-}
-
 
 var data1 = {
-    "product_id": [],
-    "category": ['shoes', 'electronics', 'apparel', 'auto', 'health', 'lifestyle', 'tech', 'furniture', 'splurge', 'food'],
-    "product_name": [],
-    "product_ratings": [],
-    "reviewer": [],
-    "review_title": [],
-    "review": [],
-    "images": [],
-    "verified_purchase": [true, false],
-    "helpful_counter": [],
-    "created_at": []
-  }
+  "product_id": [],
+  "category": ['shoes', 'electronics', 'apparel', 'auto', 'health', 'lifestyle', 'tech', 'furniture', 'splurge', 'food'],
+  "product_name": [],
+  "product_ratings": [],
+  "reviewer": [],
+  "review_title": [],
+  "review": [],
+  "images": [],
+  "verified_purchase": [true, false],
+  "helpful_counter": [],
+  "created_at": []
+}
 
 var data = { product_id: 
-    [ 1,
+  [ 1,
       2,
       3,
       4,
@@ -736,159 +716,31 @@ var data = { product_id:
       104,
       40 ],
    created_at: 
-    [ 2018-10-09T12:37:20.847Z,
-      2018-03-27T18:11:57.087Z,
-      2019-02-02T09:45:56.640Z,
-      2018-09-27T19:45:32.916Z,
-      2018-06-12T11:35:22.002Z,
-      2018-06-27T16:49:56.827Z,
-      2018-05-23T17:11:31.767Z,
-      2018-07-13T05:36:05.857Z,
-      2018-03-02T07:17:24.296Z,
-      2018-04-27T18:15:02.796Z,
-      2018-09-23T22:33:21.392Z,
-      2018-12-15T05:20:02.938Z,
-      2018-10-05T23:12:40.709Z,
-      2019-01-17T10:26:20.165Z,
-      2018-02-14T16:43:13.142Z,
-      2018-05-20T15:05:55.055Z,
-      2018-11-19T18:14:16.402Z,
-      2018-10-30T14:11:36.764Z,
-      2019-01-27T14:48:27.023Z,
-      2018-08-27T15:53:30.315Z,
-      2018-11-02T21:07:29.961Z,
-      2018-12-16T16:03:24.520Z,
-      2018-11-12T16:30:22.098Z,
-      2018-03-23T14:14:04.896Z,
-      2018-06-13T13:58:59.898Z,
-      2018-02-12T11:26:46.029Z,
-      2018-12-25T03:47:55.868Z,
-      2018-06-19T15:06:16.805Z,
-      2018-05-22T01:38:09.075Z,
-      2018-04-24T12:34:26.668Z,
-      2018-09-01T22:15:16.328Z,
-      2018-12-21T05:10:39.967Z,
-      2018-11-26T21:43:41.883Z,
-      2018-10-23T18:26:40.823Z,
-      2018-10-13T07:43:16.969Z,
-      2018-10-30T08:31:43.795Z,
-      2018-11-23T22:25:30.209Z,
-      2018-02-27T02:28:24.623Z,
-      2018-10-22T15:50:47.800Z,
-      2018-07-06T18:12:40.583Z,
-      2018-06-29T02:05:59.510Z,
-      2018-12-19T07:47:20.242Z,
-      2018-04-21T02:39:48.587Z,
-      2018-10-07T00:01:45.143Z,
-      2018-04-28T15:31:27.792Z,
-      2018-12-01T17:06:47.709Z,
-      2018-02-18T13:34:32.276Z,
-      2019-02-06T05:22:27.144Z,
-      2018-11-10T07:49:20.258Z,
-      2018-03-30T17:31:23.861Z,
-      2018-09-04T22:44:05.136Z,
-      2018-12-15T13:27:13.933Z,
-      2018-05-07T20:07:52.693Z,
-      2018-08-16T01:07:59.628Z,
-      2018-03-15T04:06:39.896Z,
-      2018-10-05T09:12:52.708Z,
-      2018-09-07T08:03:21.375Z,
-      2019-02-01T01:01:55.972Z,
-      2018-07-31T03:05:54.642Z,
-      2019-01-20T14:02:38.255Z,
-      2018-12-31T14:40:56.173Z,
-      2018-03-22T15:08:52.286Z,
-      2018-11-07T01:15:06.142Z,
-      2018-11-17T16:59:23.241Z,
-      2018-03-27T14:47:32.074Z,
-      2018-08-12T16:34:35.200Z,
-      2018-02-19T06:26:58.166Z,
-      2018-08-07T09:37:36.597Z,
-      2018-03-07T05:49:55.269Z,
-      2018-02-23T16:10:12.141Z,
-      2018-03-26T09:27:53.078Z,
-      2018-02-24T12:21:47.152Z,
-      2018-02-09T08:37:50.128Z,
-      2018-11-12T14:37:40.846Z,
-      2019-01-15T13:24:46.180Z,
-      2018-05-17T15:55:26.762Z,
-      2018-04-02T03:45:47.249Z,
-      2018-05-01T22:37:28.511Z,
-      2018-08-09T13:43:06.443Z,
-      2018-08-03T11:39:16.008Z,
-      2018-05-28T20:26:25.153Z,
-      2018-08-15T00:54:50.569Z,
-      2018-07-26T22:15:28.268Z,
-      2019-01-17T20:46:18.705Z,
-      2018-07-01T07:51:54.525Z,
-      2018-06-06T02:11:34.869Z,
-      2018-09-01T09:57:09.785Z,
-      2018-06-03T01:36:12.191Z,
-      2018-11-14T11:30:17.834Z,
-      2018-11-14T01:52:41.461Z,
-      2018-06-27T15:33:26.098Z,
-      2019-02-01T15:14:32.415Z,
-      2018-07-02T05:08:05.534Z,
-      2018-11-30T21:57:29.651Z,
-      2018-03-16T20:32:48.488Z,
-      2018-05-08T14:05:55.597Z,
-      2018-11-07T15:03:26.146Z,
-      2019-01-11T04:59:32.601Z,
-      2019-02-03T01:59:47.138Z,
-      2018-03-02T02:49:10.447Z ] 
+    []
     };
 
-
-
-//create instance, 100 of em
-//then iterate thru each
-//then save to mlab
-
-//product_id
+//need to create 100 instances of the model Review. basically 100 unique items
 for (var i = 1; i <=100; i++) {
-  data.product_id.push(i);
+  var review_instance = new Review({
+    product_id: data.product_id[i],
+    category: data.category[Math.floor(Math.random() * data.category.length)],
+    product_name: data.product_name[i],
+    product_ratings: Math.floor(Math.random() * 5) + 1,
+    review: data.review[i],
+    review_title: data.review_title[i],
+    reviewer: data.reviewer[i],
+    images: data.images[i],
+    verified_purchase: data.verified_purchase[Math.floor(Math.random() * data.verified_purchase.length)],
+    helpful_counter: data.helpful_counter[i],
+    created_at: 'January 1, 2017'
+  })
+  review_instance.save((err) => {
+    if (err) {
+      console.log(err);
+    }
+    console.log('Saved yo stuff!')
+  })
 }
-
-//product_name
-for (var i = 1; i <= 100; i++) {
-  data.product_name.push(faker.commerce.productName());
-}
-
-//product_ratings
-for (var i = 1; i <= 5; i++) {
-  data.product_ratings.push(i);
-}
-
-//reviewer
-for (var i = 1; i <= 100; i++) {
-  data.reviewer.push(faker.name.findName());
-}
-
-//review_title
-for(var i = 1; i <=100; i++) {
-  data.review_title.push(faker.lorem.sentence());
-}
-
-//review
-for (var i = 1; i <= 100; i++) {
-  data.review.push(faker.lorem.sentences());
-}
-
-//images
-for (var i = 1; i <= 100; i++) {
-  data.images.push(faker.image.food());
-}
-
-//helpful counter
-for (var i = 1; i <=50; i++) {
-  data.helpful_counter.push(faker.random.number({min:1, max:200}));
-}
-//created at
-for (var i = 1; i <= 100; i++) {
-  data.created_at.push(faker.date.past());
-}
-
-
 
 
 
