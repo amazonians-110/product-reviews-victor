@@ -1,6 +1,6 @@
 var faker = require('faker');
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/reviews');
+mongoose.connect('mongodb://victor:victor123@ds125385.mlab.com:25385/products');
 
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
@@ -8,8 +8,7 @@ db.once('open', function() {
   console.log('Connection is open')
 });
 
-//per review
-var reviewSchema = new Schema({
+const reviewSchema = new Schema({
   product_id: Number,
   category: String,
   product_name: String,
@@ -17,35 +16,46 @@ var reviewSchema = new Schema({
   review: String,
   review_title: String,
   reviewer: String,
-  review_comments: [],
   images: [],
   verified_purchase: Boolean,
   helpful_counter: Number,
   created_at: Date
 })
 
-//there will be many reviewSchemas, for the same and even different products
-//product_id's will be from 1 to 100 in the database;
-
 let Review = mongoose.model('Review', reviewSchema);
 
 var data = {
-  product_id: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,
-    18,19,20,21,22,23,24,25,26,27,28,29,30,31,
-    32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,
-    49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,
-    66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,
-    84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100],
-  product_name: [],
-  product_ratings: [],
-  review: [],
-  review_title: [],
-  reviewer: [],
-  review_comments: [],
-  images: [],
-  verified_purchase: [],
-  helpful_counter: [],
-  created_at: []
+    "product_id": [],
+    "category": ['shoes', 'electronics', 'apparel', 'auto', 'health', 'lifestyle', 'tech', 'furniture', 'splurge', 'food'],
+    "product_name": [],
+    "product_ratings": [],
+    "reviewer": [],
+    "review_title": [],
+    "review": [],
+    "images": [],
+    "verified_purchase": [true, false],
+    "helpful_counter": [],
+    "created_at": []
+  }
+
+
+//create instance, 100 of em
+//then iterate thru each
+//then save to mlab
+
+//product_id
+for (var i = 1; i <=100; i++) {
+  data.product_id.push(i);
+}
+
+//product_name
+for (var i = 1; i <= 100; i++) {
+  data.product_name.push(faker.commerce.productName());
+}
+
+//product_ratings
+for (var i = 1; i <= 5; i++) {
+  data.product_ratings.push(i);
 }
 
 //reviewer
@@ -53,20 +63,32 @@ for (var i = 1; i <= 100; i++) {
   data.reviewer.push(faker.name.findName());
 }
 
+//review_title
+for(var i = 1; i <=100; i++) {
+  data.review_title.push(faker.lorem.sentence());
+}
+
 //review
 for (var i = 1; i <= 100; i++) {
-  data.reviewer.push(faker.lorem.sentences());
+  data.review.push(faker.lorem.sentences());
 }
 
 //images
 for (var i = 1; i <= 100; i++) {
-  data.reviewer.push(faker.image.avatar());
+  data.images.push(faker.image.food());
 }
 
+//helpful counter
+for (var i = 1; i <=50; i++) {
+  data.helpful_counter.push(faker.random.number({min:1, max:200}));
+}
 //created at
 for (var i = 1; i <= 100; i++) {
-  data.reviewer.push(faker.date.past());
+  data.created_at.push(faker.date.past());
 }
+
+
+
 
 
 
