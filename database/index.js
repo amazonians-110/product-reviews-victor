@@ -1,6 +1,9 @@
 const mongoose = require('mongoose');
+const dotenv = require('dotenv').config();
 const faker = require('faker');
-mongoose.connect('mongodb://victor:victor123@ds125385.mlab.com:25385/products');
+
+var url = process.env.MONGOLAB_URI;
+mongoose.connect(url);
 
 const db = mongoose.connection;
 
@@ -30,6 +33,9 @@ const reviewSchema = new Schema({
 let Review = mongoose.model('Review', reviewSchema);
 //'Review' is the model
 
+Review.deleteMany({}, () => {
+  console.log('Database cleared. Ready for inserting');
+})
 
 var data1 = {
   "product_id": [],
@@ -742,6 +748,13 @@ for (var i = 1; i <=100; i++) {
   })
 }
 
+function grabProduct(productid, callback) {
+  Review.find({product_id : productid}, (err, num) => {
+    if (err) {
+      callback(err);
+    }
+    callback(null, num);
+  });
+}
 
-
-
+module.exports.grabProduct = grabProduct;
