@@ -1,7 +1,6 @@
 const express = require('express')
 const bodyParser = require('body-parser');
 const grabProduct = require('../database/index.js').grabProduct;
-
 const app = express();
 
 app.use(bodyParser.json());
@@ -17,7 +16,6 @@ app.get('/product/:id', function(req, res) {
     }
     res.status(200).send(num);
   });
-          //hi
 
 });
 
