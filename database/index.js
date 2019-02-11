@@ -1,9 +1,8 @@
-const mongoose = require('mongoose');
 const dotenv = require('dotenv').config();
+const mongoose = require('mongoose');
 const faker = require('faker');
 
-var url = process.env.MONGOLAB_URI;
-mongoose.connect(url);
+mongoose.connect('mongodb://victor:victor123@ds125385.mlab.com:25385/products', {useNewUrlParser: true});
 const db = mongoose.connection;
 
 db.on('error', console.error.bind(console, 'connection error:'));
@@ -38,6 +37,15 @@ var data = {
    verified_purchase: [ true, false ],
     };
 
+generateImages = function() {
+  var imgs = [];
+  var num = Math.floor(Math.random() * 10);
+  for (var i = 0; i < num; i++) {
+    imgs.push(faker.image.food());
+  }
+  return imgs;
+}
+
 for (var i = 1; i <=100; i++) {
   var review_instance = new Review({
     product_id: i,
@@ -47,7 +55,7 @@ for (var i = 1; i <=100; i++) {
     review: faker.lorem.sentences(),
     review_title: faker.lorem.sentence(),
     reviewer: faker.name.findName(),
-    images: faker.image.food(),
+    images: generateImages(),
     verified_purchase: data.verified_purchase[Math.floor(Math.random() * data.verified_purchase.length)],
     helpful_counter: Math.floor(Math.random() * 500 ) + 1,
     created_at: faker.date.past().toDateString()
