@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const faker = require('faker');
 
 require('dotenv').config({path:'../.env'});
-
+console.log(process.env.MONGOLAB_URI);
 mongoose.connect(process.env.MONGOLAB_URI, {useNewUrlParser: true});
 const db = mongoose.connection;
 
