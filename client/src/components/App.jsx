@@ -7,7 +7,7 @@ class App extends React.Component {
 
   render() {
     return(
-      <h1>Let's do this</h1>
+      <h2>Customer images</h2>
     )
   }
 }
