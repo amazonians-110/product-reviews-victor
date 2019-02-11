@@ -10,9 +10,11 @@
   },
   "main": "main.js",
   "scripts": {
+    "watch": "webpack --watch",
     "develop": "webpack --mode development --watch",
     "build": "webpack --mode production",
-    "seed": "node ./database/index.js"
+    "seed": "node ./database/index.js",
+    "start": "nodemon ./server/index.js"
   },
   "dependencies": {
     "axios": "^0.18.0",
@@ -24,8 +26,7 @@
     "mongodb": "^3.1.13",
     "mongoose": "^5.4.10",
     "react": "^16.8.1",
-    "react-dom": "^16.8.1",
-    "webpack-cli": "^3.2.3"
+    "react-dom": "^16.8.1"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
@@ -38,6 +39,8 @@
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-react": "^7.12.4",
     "nodemon": "^1.18.10",
-    "webpack": "^4.29.3"
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.1.14"
   }
 }
