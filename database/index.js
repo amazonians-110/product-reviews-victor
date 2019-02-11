@@ -1,8 +1,9 @@
-const dotenv = require('dotenv').config();
 const mongoose = require('mongoose');
 const faker = require('faker');
 
-mongoose.connect('mongodb://victor:victor123@ds125385.mlab.com:25385/products', {useNewUrlParser: true});
+require('dotenv').config({path:'../.env'});
+
+mongoose.connect(process.env.MONGOLAB_URI, {useNewUrlParser: true});
 const db = mongoose.connection;
 
 db.on('error', console.error.bind(console, 'connection error:'));
