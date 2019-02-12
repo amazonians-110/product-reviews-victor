@@ -7,7 +7,12 @@ class WriteReview extends React.Component {
 
   render() {
     return(
-      <div>WriteReview component</div>
+      <div>
+        See all 453 reviews
+        <div>
+        <input type="submit" value="Write a customer review"></input>
+        </div>
+      </div>
     )
   }
 }

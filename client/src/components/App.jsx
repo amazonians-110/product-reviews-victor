@@ -5,9 +5,10 @@ import styled from 'styled-components';
 
 const LeftRight = styled.div`
   display: inline-block
-  padding: 50px
+  border: 1px
   border-style: solid
-  margin: 50px
+  padding: 50px
+  height: 100%
 `;
 
 class App extends React.Component {

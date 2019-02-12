@@ -7,7 +7,13 @@ class Images extends React.Component {
 
   render() {
     return(
-      <div>Images component</div>
+      <div>
+        <b>Customer Images</b>
+        <div>
+          
+        </div>
+        <h6>See all customer images</h6>
+      </div>
     )
   }
 }

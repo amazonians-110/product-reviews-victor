@@ -7,7 +7,11 @@ class Thoughts extends React.Component {
 
   render() {
     return(
-      <div>Thoughts component</div>
+      <div>
+        <b>Review this product</b>
+        <div>Share your thoughts with other customers</div>
+        <input type="submit" value="Write a customer review"></input>
+      </div>
     )
   }
 }
