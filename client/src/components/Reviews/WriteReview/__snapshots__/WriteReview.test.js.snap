@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WriteReview should render correctly 1`] = `
+<div>
+  See all 453 reviews
+  <div>
+    <input
+      type="submit"
+      value="Write a customer review"
+    />
+  </div>
+</div>
+`;

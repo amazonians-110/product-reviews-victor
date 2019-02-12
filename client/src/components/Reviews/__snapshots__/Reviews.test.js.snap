@@ -2,10 +2,17 @@
 
 exports[`Reviews should render correctly 1`] = `
 <div>
-  This is the reviews
-  <Images />
-  <Mention />
-  <ReviewList />
-  <WriteReview />
+  <styled.div>
+    <Images />
+  </styled.div>
+  <styled.div>
+    <Mention />
+  </styled.div>
+  <styled.div>
+    <ReviewList />
+  </styled.div>
+  <styled.div>
+    <WriteReview />
+  </styled.div>
 </div>
 `;

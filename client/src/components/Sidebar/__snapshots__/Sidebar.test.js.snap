@@ -2,10 +2,20 @@
 
 exports[`Sidebar should render correctly 1`] = `
 <div>
-  Here is the sidebar
-  <Stars />
-  <Feature />
-  <Interests />
-  <Thoughts />
+  <styled.div>
+    <b>
+      453 customer reviews
+    </b>
+    <Stars />
+  </styled.div>
+  <styled.div>
+    <Feature />
+  </styled.div>
+  <styled.div>
+    <Interests />
+  </styled.div>
+  <styled.div>
+    <Thoughts />
+  </styled.div>
 </div>
 `;

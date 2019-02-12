@@ -8,7 +8,6 @@ const LeftRight = styled.div`
   border: 1px
   border-style: solid
   padding: 50px
-  height: 100%
 `;
 
 class App extends React.Component {
