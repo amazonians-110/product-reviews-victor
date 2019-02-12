@@ -3,7 +3,7 @@ const faker = require('faker');
 
 require('dotenv').config({path:'../.env'});
 console.log(process.env.MONGOLAB_URI);
-mongoose.connect(process.env.MONGOLAB_URI, {useNewUrlParser: true});
+mongoose.connect('mongodb://victor:victor123@ds125385.mlab.com:25385/products', {useNewUrlParser: true});
 const db = mongoose.connection;
 
 db.on('error', console.error.bind(console, 'connection error:'));

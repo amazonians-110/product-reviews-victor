@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sidebar should render correctly 1`] = `
+<div>
+  Here is the sidebar
+  <Stars />
+  <Feature />
+  <Interests />
+  <Thoughts />
+</div>
+`;
