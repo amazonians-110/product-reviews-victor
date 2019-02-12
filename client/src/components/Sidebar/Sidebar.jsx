@@ -9,8 +9,14 @@ import Interests from './Interests/Interests.jsx';
 import Thoughts from './Thoughts/Thoughts.jsx';
 
 const Boxes = styled.div`
-  margin: 1px
-  padding: 20px
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+  border: solid black 1px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%
+  height: 100%
 `;
 
 class Reviews extends React.Component {
@@ -23,6 +29,8 @@ class Reviews extends React.Component {
       <div>
         <Boxes>
           <b>453 customer reviews</b>
+        </Boxes>
+        <Boxes>
           <Stars />
         </Boxes>
         <Boxes>

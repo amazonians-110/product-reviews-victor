@@ -7,10 +7,13 @@ import Sidebar from './Sidebar/Sidebar.jsx';
 import Reviews from './Reviews/Reviews.jsx';
 
 const LeftRight = styled.div`
-  display: inline-block
-  border: 1px
-  border-style: solid
-  padding: 50px
+display: flex;
+flex-direction: column;
+border: solid black 1px;
+width: 100%
+height: 100%
+justify-content: flex-start;
+flex-wrap: wrap;
 `;
 
 class App extends React.Component {
