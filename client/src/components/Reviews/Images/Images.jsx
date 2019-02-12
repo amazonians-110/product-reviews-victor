@@ -1,3 +1,5 @@
+/* eslint-disable no-useless-constructor */
+/* eslint-disable react/prefer-stateless-function */
 import React from 'react';
 
 class Images extends React.Component {
@@ -6,15 +8,13 @@ class Images extends React.Component {
   }
 
   render() {
-    return(
+    return (
       <div>
         <b>Customer Images</b>
-        <div>
-          
-        </div>
+        <div />
         <h6>See all customer images</h6>
       </div>
-    )
+    );
   }
 }
 

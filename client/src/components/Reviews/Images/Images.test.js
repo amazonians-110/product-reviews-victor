@@ -3,11 +3,14 @@ import { shallow } from 'enzyme';
 
 import Images from './Images';
 
+// eslint-disable-next-line no-undef
 describe('Images', () => {
+  // eslint-disable-next-line no-undef
   it('should render correctly', () => {
-    
-    const component = shallow(<Images/>);
+    // eslint-disable-next-line react/jsx-filename-extension
+    const component = shallow(<Images />);
 
+    // eslint-disable-next-line no-undef
     expect(component).toMatchSnapshot();
   });
 });

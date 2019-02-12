@@ -1,7 +1,10 @@
+/* eslint-disable no-useless-constructor */
+/* eslint-disable react/prefer-stateless-function */
+/* eslint-disable import/extensions */
 import React from 'react';
+import styled from 'styled-components';
 import Sidebar from './Sidebar/Sidebar.jsx';
 import Reviews from './Reviews/Reviews.jsx';
-import styled from 'styled-components';
 
 const LeftRight = styled.div`
   display: inline-block
@@ -16,17 +19,17 @@ class App extends React.Component {
   }
 
   render() {
-    return(
+    return (
       <div>
         <LeftRight>
-          <Sidebar/>
+          <Sidebar />
         </LeftRight>
 
         <LeftRight>
-          <Reviews/>                              
+          <Reviews />
         </LeftRight>
       </div>
-    )
+    );
   }
 }
 
