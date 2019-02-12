@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Interests should render correctly 1`] = `
+<div>
+  <b>
+    By consumer groups & interests
+  </b>
+  <div>
+    Headphones       ***** 4.2
+  </div>
+  <div>
+    Customers in New York    ***** 4.7
+  </div>
+  <div>
+    Is this feature helpful?
+    <button>
+      Yes
+    </button>
+    <button>
+      No
+    </button>
+  </div>
+</div>
+`;

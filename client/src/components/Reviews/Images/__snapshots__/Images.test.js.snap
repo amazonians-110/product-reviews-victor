@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Images should render correctly 1`] = `
+<div>
+  <b>
+    Customer Images
+  </b>
+  <div />
+  <h6>
+    See all customer images
+  </h6>
+</div>
+`;
