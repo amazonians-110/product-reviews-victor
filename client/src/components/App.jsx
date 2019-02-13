@@ -11,7 +11,7 @@ display: flex;
 flex-direction: row;
 align-items: stretch;
 justify-content: space-between;
-
+font-family: 'Lato', sans-serif;
 `;
 
 class App extends React.Component {

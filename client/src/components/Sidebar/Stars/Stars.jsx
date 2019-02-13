@@ -10,9 +10,14 @@ color: #0066c0;
 const Number = styled.b`
 color: #c76800;
 font-weight: 700;
-font-size: 21px;
+font-size: 17px;
 line-height: 1.3;
+`;
 
+const Descriptor = styled.div`
+padding: 2px;
+font-size: 14px;
+padding: 15px 15px 0px 0px
 `;
 
 class Stars extends React.Component {
@@ -22,7 +27,7 @@ class Stars extends React.Component {
 
   render() {
     return (
-      <div>
+      <Descriptor>
         <Number>453 customer reviews</Number>
         <div />
         <div>***** 4.2 out of 5 stars</div>
@@ -51,7 +56,7 @@ class Stars extends React.Component {
           1 star
           </Links>
         </div>
-      </div>
+      </Descriptor>
     );
   }
 }

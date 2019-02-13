@@ -9,12 +9,14 @@ import ReviewList from './ReviewList/ReviewList.jsx';
 import WriteReview from './WriteReview/WriteReview.jsx';
 
 const Boxes = styled.div`
-
 flex-direction: column;
-border: solid red 1px;
 align-items: stretch;
 justify-content: stretch;
 padding: 10px;
+`;
+
+const Left = styled.div`
+padding-left: 40px;
 `;
 
 
@@ -25,12 +27,12 @@ class Reviews extends React.Component {
 
   render() {
     return (
-      <div>
+      <Left>
         <Boxes><Images /></Boxes>
         <Boxes><Mention /></Boxes>
         <Boxes><ReviewList /></Boxes>
         <Boxes><WriteReview /></Boxes>
-      </div>
+      </Left>
     );
   }
 }

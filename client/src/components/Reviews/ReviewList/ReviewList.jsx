@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-one-expression-per-line */
 /* eslint-disable react/button-has-type */
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-useless-constructor */
@@ -20,17 +21,19 @@ const Button = styled.button`
   box-sizing: border-box;
   width: 100px;
   height: 29px;
-  font-family: Arial,sans-serif;
 `;
 
 const Select = styled.select`
   background: #eff1f3;
+  width: 100px;
 `;
 
 const Reviews = styled.div`
   padding: 5px;
   line-height: 20px;
+  font-size: 12px;  
 `;
+
 
 class ReviewList extends React.Component {
   constructor(props) {
@@ -54,7 +57,7 @@ class ReviewList extends React.Component {
             Victor Liu
             <div>
               Stars
-              <b> "Quod soluta quas ipsam autem dolor libero dolor qui repudiandae."</b>
+              <b> Quod soluta quas ipsam autem dolor libero dolor qui repudiandae.</b>
             </div>
             <div>September 18, 2018</div>
             <p>
@@ -64,20 +67,22 @@ class ReviewList extends React.Component {
             "revtitleiew_": "Quod soluta quas ipsam autem dolor libero dolor qui repudiandae."
             </p>
             <div>
-              xyz people found this helpful
+              301 people found this helpful
             </div>
             <div>
-              <Button>Helpful</Button> | Comment | Report abuse
+              <Button>Helpful</Button> | 
+              <a href="https://www.w3schools.com/html/" style={{ textDecoration: 'none', color: '#7a7a7a' }}>Comment</a> |
+              <a href="https://www.w3schools.com/html/" style={{ textDecoration: 'none', color: '#7a7a7a' }}>Report abuse</a>
             </div>
           </div>
         </Reviews>
 
         <Reviews>
           <img src="" alt="" />
-            Grace Shei
+            Andrew Mitchell
           <div>
               Stars
-            <b> "Quod soluta quas ipsam autem dolor libero dolor qui repudiandae."</b>
+            <b> Quod soluta quas ipsam autem dolor libero dolor qui repudiandae.</b>
           </div>
           <div>September 18, 2018</div>
           <p>
@@ -87,10 +92,12 @@ class ReviewList extends React.Component {
             "review_title": "Quod soluta quas ipsam autem dolor libero dolor qui repudiandae."
           </p>  
           <div>
-              xyz people found this helpful
+              107 people found this helpful
           </div>                
           <div>
-            <Button>Helpful</Button> | Comment | Report abuse
+            <Button>Helpful</Button> | 
+            <a href="https://www.w3schools.com/html/" style={{ textDecoration: 'none', color: '#7a7a7a' }}>Comment</a> |
+            <a href="https://www.w3schools.com/html/" style={{ textDecoration: 'none', color: '#7a7a7a' }}>Report abuse</a>          
           </div>
         </Reviews>
 
@@ -99,7 +106,7 @@ class ReviewList extends React.Component {
           Chris Tso
           <div>
               Stars
-            <b> "Quod soluta quas ipsam autem dolor libero dolor qui repudiandae."</b>
+            <b> Quod soluta quas ipsam autem dolor libero dolor qui repudiandae.</b>
           </div>
           <div>September 18, 2018</div>
           <p>
@@ -109,11 +116,12 @@ class ReviewList extends React.Component {
           "review_title": "Quod soluta quas ipsam autem dolor libero dolor qui repudiandae."
           </p>
           <div>
-              xyz people found this helpful
+              888 people found this helpful
           </div>          
           <div>
-            <Button>Helpful</Button> | Comment | Report abuse
-          </div>
+            <Button>Helpful</Button> | 
+            <a href="https://www.w3schools.com/html/" style={{ textDecoration: 'none', color: '#7a7a7a' }}>Comment</a> |
+            <a href="https://www.w3schools.com/html/" style={{ textDecoration: 'none', color: '#7a7a7a' }}>Report abuse</a>          </div>
         </Reviews>
       </div>
     );

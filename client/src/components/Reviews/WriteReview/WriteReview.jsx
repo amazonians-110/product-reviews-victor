@@ -9,6 +9,10 @@ const Text = styled.div`
   font-weight: bold; 
 `;
 
+const Wrap = styled.div`
+padding: 15px 15px 25px 0px
+`;
+
 const Button = styled.button`
   background: #eff1f3;
   border-radius: 3px;
@@ -17,11 +21,11 @@ const Button = styled.button`
   border-width: 1px;
   cursor: pointer;
   display: inline-block;
-  padding: 0;
+  margin: 8px;
   text-align: center;
   text-decoration: none!important;
   vertical-align: middle;
-  width: 200px;
+  width: 160px;
   height: 29px;
   font-family: Arial,sans-serif;
 `;
@@ -33,7 +37,7 @@ class WriteReview extends React.Component {
 
   render() {
     return (
-      <div>
+      <Wrap>
         <Text>
           See all 453 reviews
         </Text>
@@ -41,7 +45,7 @@ class WriteReview extends React.Component {
         <Button>
           Write a customer review
         </Button>
-      </div>
+      </Wrap>
     );
   }
 }

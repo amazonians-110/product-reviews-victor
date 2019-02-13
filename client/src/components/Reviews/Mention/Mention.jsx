@@ -5,11 +5,17 @@
 import React from 'react';
 import styled from 'styled-components';
 
+const Descriptor = styled.div`
+padding: 2px;
+font-size: 14px;
+font-weight: bold;
+`;
+
 const Buttons = styled.button`
   background-color: #D7E8EA;
   padding: 0px 14px;
   line-height: 29px;
-  margin: 0px 10px 14px 0px;
+  margin: 0px 10px 0px 0px;
   border-bottom: solid 1px #969696;
   display: inline-block;
   font-size: 13px;
@@ -24,7 +30,7 @@ class Mention extends React.Component {
   render() {
     return (
       <div>
-        <b>Read reviews that mention</b>
+        <Descriptor>Read reviews that mention</Descriptor>
         <div>
           <Buttons>sound quality</Buttons>
           <Buttons>battery life</Buttons>

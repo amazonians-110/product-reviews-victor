@@ -5,7 +5,14 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Descriptor = styled.div`
-padding: 2px;
+padding: 4px;
+font-size: 14px;
+`;
+
+const Border = styled.div`
+border-top: 1px solid #e7e7e7;
+font-size .9em;
+padding: 15px 15px 0px 0px
 `;
 
 const Button = styled.button`
@@ -16,14 +23,14 @@ const Button = styled.button`
   border-width: 1px;
   cursor: pointer;
   display: inline-block;
-  padding: 0;
+  margin: 4px;
   text-align: center;
   text-decoration: none!important;
   vertical-align: middle;
   box-sizing: border-box;
   width: 50px;
   height: 20px;
-  font-family: Arial,sans-serif;
+  font-family: Lato,sans-serif;
 `;
 
 class Interests extends React.Component {
@@ -33,16 +40,17 @@ class Interests extends React.Component {
 
   render() {
     return (
-      <div>
+      <Border>
         <b>By consumer groups & interests</b>
         <Descriptor>Headphones       ***** 4.2</Descriptor>
         <Descriptor>Customers in New York    ***** 4.7</Descriptor>
-        <Descriptor>
+        <Descriptor style={{ textDecoration: 'none', color: '#7a7a7a' }}>
           Is this feature helpful?
+
           <Button>Yes</Button>
           <Button>No</Button>
         </Descriptor>
-      </div>
+      </Border>
     );
   }
 }

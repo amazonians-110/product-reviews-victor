@@ -11,7 +11,7 @@ import Thoughts from './Thoughts/Thoughts.jsx';
 const Boxes = styled.div`
 
   flex-direction: column;
-  border: solid red 1px;
+
   align-items: stretch;
   justify-content: stretch;
   padding: 10px;

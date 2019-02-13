@@ -4,6 +4,13 @@
 import React from 'react';
 import styled from 'styled-components';
 
+const Border = styled.div`
+border-top: 1px solid #e7e7e7;
+border-bottom: 1px solid #e7e7e7;
+font-size 14px;
+padding: 15px 15px 0px 0px
+`;
+
 const Button = styled.button`
   background: #eff1f3;
   border-radius: 3px;
@@ -12,7 +19,7 @@ const Button = styled.button`
   border-width: 1px;
   cursor: pointer;
   display: inline-block;
-  padding: 0;
+  margin: 4px;
   text-align: center;
   text-decoration: none!important;
   vertical-align: middle;
@@ -20,9 +27,7 @@ const Button = styled.button`
   width: 300px;
   height: 29px;
   font-family: Arial,sans-serif;
-  
 `;
-
 
 class Thoughts extends React.Component {
   constructor(props) {
@@ -31,14 +36,14 @@ class Thoughts extends React.Component {
 
   render() {
     return (
-      <div>
+      <Border>
         <b>Review this product</b>
         <div>Share your thoughts with other customers</div>
 
         <Button>
-          Write a customer review
+          <a href="https://www.w3schools.com/html/" style={{ textDecoration: 'none', color: 'black' }}>Write a customer review</a>
         </Button>
-      </div>
+      </Border>
     );
   }
 }
