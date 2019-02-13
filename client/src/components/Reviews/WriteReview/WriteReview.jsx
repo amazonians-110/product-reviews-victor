@@ -5,7 +5,8 @@ import styled from 'styled-components';
 
 const Text = styled.div`
   color: #0066c0;
-  font-size: 13px 
+  font-size: 13px;
+  font-weight: bold; 
 `;
 
 const Button = styled.button`

@@ -25,7 +25,7 @@ class Stars extends React.Component {
       <div>
         <Number>453 customer reviews</Number>
         <div />
-        <b>***** 4.2 out of 5 stars</b>
+        <div>***** 4.2 out of 5 stars</div>
         <div>
           <Links>
           5 star

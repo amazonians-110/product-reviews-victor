@@ -10,7 +10,7 @@ const LeftRight = styled.div`
 display: flex;
 flex-direction: row;
 align-items: stretch;
-justify-content: flex-start;
+justify-content: space-between;
 
 `;
 

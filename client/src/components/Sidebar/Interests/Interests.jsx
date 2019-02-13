@@ -4,6 +4,10 @@
 import React from 'react';
 import styled from 'styled-components';
 
+const Descriptor = styled.div`
+padding: 2px;
+`;
+
 const Button = styled.button`
   background: #eff1f3;
   border-radius: 3px;
@@ -31,13 +35,13 @@ class Interests extends React.Component {
     return (
       <div>
         <b>By consumer groups & interests</b>
-        <div>Headphones       ***** 4.2</div>
-        <div>Customers in New York    ***** 4.7</div>
-        <div>
+        <Descriptor>Headphones       ***** 4.2</Descriptor>
+        <Descriptor>Customers in New York    ***** 4.7</Descriptor>
+        <Descriptor>
           Is this feature helpful?
           <Button>Yes</Button>
           <Button>No</Button>
-        </div>
+        </Descriptor>
       </div>
     );
   }
