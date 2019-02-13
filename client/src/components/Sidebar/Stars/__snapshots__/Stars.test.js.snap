@@ -3,6 +3,10 @@
 exports[`Stars should render correctly 1`] = `
 <div>
   <b>
+    453 customer reviews
+  </b>
+  <div />
+  <b>
     ***** 4.2 out of 5 stars
   </b>
   <div>

@@ -9,14 +9,12 @@ import ReviewList from './ReviewList/ReviewList.jsx';
 import WriteReview from './WriteReview/WriteReview.jsx';
 
 const Boxes = styled.div`
-display: flex;
-flex-direction: row;
-background: #fff;
-border: solid black 1px;
-padding-top: 10px;
-padding-bottom: 10px;
-width: 100%
-height: 100%
+
+flex-direction: column;
+border: solid red 1px;
+align-items: stretch;
+justify-content: stretch;
+padding: 10px;
 `;
 
 

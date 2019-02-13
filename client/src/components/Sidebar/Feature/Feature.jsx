@@ -1,3 +1,5 @@
+/* eslint-disable no-useless-constructor */
+/* eslint-disable react/prefer-stateless-function */
 import React from 'react';
 
 class Feature extends React.Component {
@@ -6,14 +8,14 @@ class Feature extends React.Component {
   }
 
   render() {
-    return(
+    return (
       <div>
         <b>By feature</b>
         <div>Sound quality          ***** 4.4</div>
         <div>Battery life           ***** 4.1</div>
         <div>Noise cancellation     ***** 4.1</div>
       </div>
-    )
+    );
   }
 }
 

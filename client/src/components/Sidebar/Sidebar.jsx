@@ -9,14 +9,14 @@ import Interests from './Interests/Interests.jsx';
 import Thoughts from './Thoughts/Thoughts.jsx';
 
 const Boxes = styled.div`
-  display: flex;
-  flex-direction: row;
-  background: #fff;
-  border: solid black 1px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  width: 100%
-  height: 100%
+
+  flex-direction: column;
+  border: solid red 1px;
+  align-items: stretch;
+  justify-content: stretch;
+  padding: 10px;
+  padding-right: 25px;
+
 `;
 
 class Reviews extends React.Component {
@@ -27,9 +27,6 @@ class Reviews extends React.Component {
   render() {
     return (
       <div>
-        <Boxes>
-          <b>453 customer reviews</b>
-        </Boxes>
         <Boxes>
           <Stars />
         </Boxes>

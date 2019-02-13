@@ -8,12 +8,10 @@ import Reviews from './Reviews/Reviews.jsx';
 
 const LeftRight = styled.div`
 display: flex;
-flex-direction: column;
-border: solid black 1px;
-width: 100%
-height: 100%
+flex-direction: row;
+align-items: stretch;
 justify-content: flex-start;
-flex-wrap: wrap;
+
 `;
 
 class App extends React.Component {
@@ -23,15 +21,10 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
-        <LeftRight>
-          <Sidebar />
-        </LeftRight>
-
-        <LeftRight>
-          <Reviews />
-        </LeftRight>
-      </div>
+      <LeftRight>
+        <Sidebar />
+        <Reviews />
+      </LeftRight>
     );
   }
 }
