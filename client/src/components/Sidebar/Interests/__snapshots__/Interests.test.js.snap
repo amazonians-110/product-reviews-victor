@@ -1,24 +1,43 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Interests should render correctly 1`] = `
-<div>
+<styled.div>
   <b>
     By consumer groups & interests
   </b>
-  <div>
-    Headphones       ***** 4.2
-  </div>
-  <div>
-    Customers in New York    ***** 4.7
-  </div>
-  <div>
+  <styled.div>
+    Headphones
+    <img
+      alt="stars"
+      height="25px"
+      src="https://s3.amazonaws.com/product-reviews-hr110/Icons/stars.png"
+    />
+    4.2
+  </styled.div>
+  <styled.div>
+    Customers in New York
+    <img
+      alt="stars"
+      height="25px"
+      src="https://s3.amazonaws.com/product-reviews-hr110/Icons/stars.png"
+    />
+    4.7
+  </styled.div>
+  <styled.div
+    style={
+      Object {
+        "color": "#7a7a7a",
+        "textDecoration": "none",
+      }
+    }
+  >
     Is this feature helpful?
-    <button>
+    <styled.button>
       Yes
-    </button>
-    <button>
+    </styled.button>
+    <styled.button>
       No
-    </button>
-  </div>
-</div>
+    </styled.button>
+  </styled.div>
+</styled.div>
 `;

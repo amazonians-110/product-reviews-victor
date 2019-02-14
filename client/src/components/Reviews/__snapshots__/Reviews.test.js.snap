@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Reviews should render correctly 1`] = `
-<div>
+<styled.div>
   <styled.div>
     <Images />
   </styled.div>
@@ -14,5 +14,5 @@ exports[`Reviews should render correctly 1`] = `
   <styled.div>
     <WriteReview />
   </styled.div>
-</div>
+</styled.div>
 `;

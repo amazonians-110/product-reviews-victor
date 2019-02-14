@@ -2,62 +2,50 @@
 
 exports[`Mention should render correctly 1`] = `
 <div>
-  <b>
+  <styled.div>
     Read reviews that mention
-  </b>
+  </styled.div>
   <div>
-    <input
-      type="submit"
-      value="sound quality"
-    />
-    <input
-      type="submit"
-      value="battery life"
-    />
-    <input
-      type="submit"
-      value="highly charging case"
-    />
-    <input
-      type="submit"
-      value="wireless earbuds"
-    />
+    <styled.button>
+      sound quality
+    </styled.button>
+    <styled.button>
+      battery life
+    </styled.button>
+    <styled.button>
+      charging case
+    </styled.button>
+    <styled.button>
+      wireless earbuds
+    </styled.button>
   </div>
   <div>
-    <input
-      type="submit"
-      value="noise cancelling"
-    />
-    <input
-      type="submit"
-      value="highly recommend"
-    />
-    <input
-      type="submit"
-      value="noise cancellation"
-    />
-    <input
-      type="submit"
-      value="rose gold"
-    />
+    <styled.button>
+      noise cancelling
+    </styled.button>
+    <styled.button>
+      highly recommend
+    </styled.button>
+    <styled.button>
+      noise cancellation
+    </styled.button>
+    <styled.button>
+      rose gold
+    </styled.button>
   </div>
   <div>
-    <input
-      type="submit"
-      value="definitely recommend"
-    />
-    <input
-      type="submit"
-      value="left earbud"
-    />
-    <input
-      type="submit"
-      value="listening to music"
-    />
-    <input
-      type="submit"
-      value="left and right"
-    />
+    <styled.button>
+      listening to music
+    </styled.button>
+    <styled.button>
+      definitely recommend
+    </styled.button>
+    <styled.button>
+      left earbud
+    </styled.button>
+    <styled.button>
+      left and right
+    </styled.button>
   </div>
 </div>
 `;
