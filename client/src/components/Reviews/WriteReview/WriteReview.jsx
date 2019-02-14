@@ -21,7 +21,7 @@ const Button = styled.button`
   border-width: 1px;
   cursor: pointer;
   display: inline-block;
-  margin: 8px;
+  margin: 8px 0px 8px 8px;
   text-align: center;
   text-decoration: none!important;
   vertical-align: middle;

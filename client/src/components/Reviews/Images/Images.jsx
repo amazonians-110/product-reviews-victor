@@ -2,7 +2,7 @@
 /* eslint-disable react/prefer-stateless-function */
 import React from 'react';
 import styled from 'styled-components';
-import smiley from './smiley.jpg';
+const axios = require('axios');
 
 const Text = styled.a`
   color: #0066c0;
@@ -10,9 +10,20 @@ const Text = styled.a`
   text-Decoration: none;
 `;
 
+const Pic = styled.img`
+  margin: 4px;
+`;
+
 class Images extends React.Component {
   constructor(props) {
     super(props);
+  }
+
+  componentDidMount() {
+    axios.get('/product/1')
+      .then((res) => {
+        console.log(res);
+      });
   }
 
   render() {
@@ -20,10 +31,10 @@ class Images extends React.Component {
       <div>
         <b>Customer Images</b>
         <div>
-          <img src={smiley} alt="smiley face" height="100" width="100" />
-          <img src={smiley} alt="smiley face" height="100" width="100" />
-          <img src={smiley} alt="smiley face" height="100" width="100" />
-          <img src={smiley} alt="smiley face" height="100" width="100" />
+          <Pic src="http://lorempixel.com/640/480/food" alt="food" height="144" width="144" />
+          <Pic src="http://lorempixel.com/640/480/cats" alt="cat" height="144" width="144" />
+          <Pic src="http://lorempixel.com/640/480/sports" alt="sports" height="144" width="144" />
+          <Pic src="http://lorempixel.com/640/480/transport" alt="transportation" height="144" width="144" />
         </div>
         <Text href="https://www.w3schools.com/html/">See all customer images</Text>
       </div>

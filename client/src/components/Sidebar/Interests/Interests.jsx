@@ -42,8 +42,17 @@ class Interests extends React.Component {
     return (
       <Border>
         <b>By consumer groups & interests</b>
-        <Descriptor>Headphones       ***** 4.2</Descriptor>
-        <Descriptor>Customers in New York    ***** 4.7</Descriptor>
+        <Descriptor>
+          Headphones
+          <img src="https://s3.amazonaws.com/product-reviews-hr110/Icons/stars.png" alt="stars" height="25px" />
+           4.2
+        </Descriptor>
+
+        <Descriptor>
+          Customers in New York
+          <img src="https://s3.amazonaws.com/product-reviews-hr110/Icons/stars.png" alt="stars" height="25px" />
+           4.7
+        </Descriptor>
         <Descriptor style={{ textDecoration: 'none', color: '#7a7a7a' }}>
           Is this feature helpful?
 

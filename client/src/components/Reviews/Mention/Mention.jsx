@@ -15,7 +15,7 @@ const Buttons = styled.button`
   background-color: #D7E8EA;
   padding: 0px 14px;
   line-height: 29px;
-  margin: 0px 10px 0px 0px;
+  margin: 10px 10px 10px 0px;
   border-bottom: solid 1px #969696;
   display: inline-block;
   font-size: 13px;

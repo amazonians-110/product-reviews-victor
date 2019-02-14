@@ -23,9 +23,21 @@ class Feature extends React.Component {
     return (
       <Border>
         <b>By feature</b>
-        <Descriptor>Sound quality          ***** 4.4</Descriptor>
-        <Descriptor>Battery life           ***** 4.1</Descriptor>
-        <Descriptor>Noise cancellation     ***** 4.1</Descriptor>
+        <Descriptor>
+          Sound quality
+          <img src="https://s3.amazonaws.com/product-reviews-hr110/Icons/stars.png" alt="stars" height="25px" />
+          4.4
+        </Descriptor>
+        <Descriptor>
+          Battery life
+          <img src="https://s3.amazonaws.com/product-reviews-hr110/Icons/stars.png" alt="stars" height="25px" />
+           4.1
+        </Descriptor>
+        <Descriptor>
+          Noise cancellation
+          <img src="https://s3.amazonaws.com/product-reviews-hr110/Icons/stars.png" alt="stars" height="25px" />
+           4.1
+        </Descriptor>
       </Border>
     );
   }

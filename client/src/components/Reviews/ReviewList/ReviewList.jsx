@@ -6,6 +6,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+const axios = require('axios');
+
 const Button = styled.button`
   background: #eff1f3;
   border-radius: 3px;
@@ -40,6 +42,7 @@ class ReviewList extends React.Component {
     super(props);
   }
 
+
   render() {
     return (
       <div>
@@ -53,10 +56,17 @@ class ReviewList extends React.Component {
 
         <Reviews>
           <div>
-            <img src="" alt="" />
+            <img
+              src="https://s3.amazonaws.com/product-reviews-hr110/Icons/avatar.png"
+              height="30px"
+              width="30px"
+              alt="avatar"
+              max-width="100%"
+              display="block"
+            />
             Victor Liu
             <div>
-              Stars
+              <img src="https://s3.amazonaws.com/product-reviews-hr110/Icons/stars.png" alt="stars" height="25px" />
               <b> Quod soluta quas ipsam autem dolor libero dolor qui repudiandae.</b>
             </div>
             <div>September 18, 2018</div>
@@ -70,7 +80,7 @@ class ReviewList extends React.Component {
               301 people found this helpful
             </div>
             <div>
-              <Button>Helpful</Button> | 
+              <Button>Helpful</Button> |
               <a href="https://www.w3schools.com/html/" style={{ textDecoration: 'none', color: '#7a7a7a' }}>Comment</a> |
               <a href="https://www.w3schools.com/html/" style={{ textDecoration: 'none', color: '#7a7a7a' }}>Report abuse</a>
             </div>
@@ -78,10 +88,10 @@ class ReviewList extends React.Component {
         </Reviews>
 
         <Reviews>
-          <img src="" alt="" />
-            Andrew Mitchell
+          <img src="https://s3.amazonaws.com/product-reviews-hr110/Icons/avatar.png" height="30px" width="30px" alt="avatar" />
+            Grace Shei
           <div>
-              Stars
+            <img src="https://s3.amazonaws.com/product-reviews-hr110/Icons/stars.png" alt="stars" height="25px" />
             <b> Quod soluta quas ipsam autem dolor libero dolor qui repudiandae.</b>
           </div>
           <div>September 18, 2018</div>
@@ -90,22 +100,22 @@ class ReviewList extends React.Component {
              aliquid dolores. Tempore consequuntur dolor est excepturi. Cum et doloremque aut as
              Id voluptatem sint. Labore vero perferendis omnis voluptatem.,
             "review_title": "Quod soluta quas ipsam autem dolor libero dolor qui repudiandae."
-          </p>  
+          </p>
           <div>
               107 people found this helpful
-          </div>                
+          </div>
           <div>
-            <Button>Helpful</Button> | 
+            <Button>Helpful</Button> |
             <a href="https://www.w3schools.com/html/" style={{ textDecoration: 'none', color: '#7a7a7a' }}>Comment</a> |
-            <a href="https://www.w3schools.com/html/" style={{ textDecoration: 'none', color: '#7a7a7a' }}>Report abuse</a>          
+            <a href="https://www.w3schools.com/html/" style={{ textDecoration: 'none', color: '#7a7a7a' }}>Report abuse</a>
           </div>
         </Reviews>
 
         <Reviews>
-          <img src="" alt="" />
+          <img src="https://s3.amazonaws.com/product-reviews-hr110/Icons/avatar.png" height="30px" width="30px" alt="avatar" />
           Chris Tso
           <div>
-              Stars
+            <img src="https://s3.amazonaws.com/product-reviews-hr110/Icons/stars.png" alt="stars" height="25px" />
             <b> Quod soluta quas ipsam autem dolor libero dolor qui repudiandae.</b>
           </div>
           <div>September 18, 2018</div>
@@ -117,11 +127,12 @@ class ReviewList extends React.Component {
           </p>
           <div>
               888 people found this helpful
-          </div>          
+          </div>
           <div>
-            <Button>Helpful</Button> | 
+            <Button>Helpful</Button> |
             <a href="https://www.w3schools.com/html/" style={{ textDecoration: 'none', color: '#7a7a7a' }}>Comment</a> |
-            <a href="https://www.w3schools.com/html/" style={{ textDecoration: 'none', color: '#7a7a7a' }}>Report abuse</a>          </div>
+            <a href="https://www.w3schools.com/html/" style={{ textDecoration: 'none', color: '#7a7a7a' }}>Report abuse</a>          
+          </div>
         </Reviews>
       </div>
     );
