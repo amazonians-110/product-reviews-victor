@@ -33,9 +33,17 @@ const Select = styled.select`
 const Reviews = styled.div`
   padding: 5px;
   line-height: 20px;
-  font-size: 12px;  
+  font-size: 13px;  
 `;
 
+const Title = styled.b`
+  font-weight: bolder;
+`;
+
+const Starbox = styled.div`
+display: flex;
+align-items: center;
+`;
 
 class ReviewList extends React.Component {
   constructor(props) {
@@ -65,10 +73,10 @@ class ReviewList extends React.Component {
               display="block"
             />
             Victor Liu
-            <div>
+            <Starbox>
               <img src="https://s3.amazonaws.com/product-reviews-hr110/Icons/stars.png" alt="stars" height="25px" />
-              <b> Quod soluta quas ipsam autem dolor libero dolor qui repudiandae.</b>
-            </div>
+              <Title> Quod soluta quas ipsam autem dolor libero dolor qui repudiandae.</Title>
+            </Starbox>
             <div>September 18, 2018</div>
             <p>
             "Pariatur dolorum voluptate commodi iusto omnis alias sed enim rem. Quis omnis ipsam
@@ -90,10 +98,10 @@ class ReviewList extends React.Component {
         <Reviews>
           <img src="https://s3.amazonaws.com/product-reviews-hr110/Icons/avatar.png" height="30px" width="30px" alt="avatar" />
             Grace Shei
-          <div>
+          <Starbox>
             <img src="https://s3.amazonaws.com/product-reviews-hr110/Icons/stars.png" alt="stars" height="25px" />
-            <b> Quod soluta quas ipsam autem dolor libero dolor qui repudiandae.</b>
-          </div>
+            <Title> Quod soluta quas ipsam autem dolor libero dolor qui repudiandae.</Title>
+          </Starbox>
           <div>September 18, 2018</div>
           <p>
             "Pariatur dolorum voluptate commodi iusto omnis alias sed enim rem. Quis omnis ipsam
@@ -114,10 +122,10 @@ class ReviewList extends React.Component {
         <Reviews>
           <img src="https://s3.amazonaws.com/product-reviews-hr110/Icons/avatar.png" height="30px" width="30px" alt="avatar" />
           Chris Tso
-          <div>
+          <Starbox>
             <img src="https://s3.amazonaws.com/product-reviews-hr110/Icons/stars.png" alt="stars" height="25px" />
-            <b> Quod soluta quas ipsam autem dolor libero dolor qui repudiandae.</b>
-          </div>
+            <Title> Quod soluta quas ipsam autem dolor libero dolor qui repudiandae.</Title>
+          </Starbox>
           <div>September 18, 2018</div>
           <p>
           "Pariatur dolorum voluptate commodi iusto omnis alias sed enim rem. Quis omnis ipsam

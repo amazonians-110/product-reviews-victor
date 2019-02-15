@@ -21,13 +21,14 @@ const Button = styled.button`
   border-width: 1px;
   cursor: pointer;
   display: inline-block;
-  margin: 8px 0px 8px 8px;
+  margin: 8px 0px 8px 0px;
   text-align: center;
   text-decoration: none!important;
   vertical-align: middle;
   width: 160px;
   height: 29px;
-  font-family: Arial,sans-serif;
+  font-family: Lato, sans-serif;
+  font-weight: bolder;
 `;
 
 class WriteReview extends React.Component {

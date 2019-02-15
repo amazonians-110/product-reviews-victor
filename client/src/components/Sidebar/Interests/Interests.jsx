@@ -5,14 +5,16 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Descriptor = styled.div`
-padding: 4px;
 font-size: 14px;
+display: flex;
+justify-content: space-between;
+align-items: center;
 `;
 
 const Border = styled.div`
 border-top: 1px solid #e7e7e7;
 font-size .9em;
-padding: 15px 15px 0px 0px
+padding: 15px 15px 15px 0px
 `;
 
 const Button = styled.button`
@@ -25,12 +27,22 @@ const Button = styled.button`
   display: inline-block;
   margin: 4px;
   text-align: center;
-  text-decoration: none!important;
   vertical-align: middle;
   box-sizing: border-box;
   width: 50px;
   height: 20px;
   font-family: Lato,sans-serif;
+`;
+
+const Title = styled.b`
+font-weight: bolder;
+font-size: 17px;
+line-height: 1.255;
+`;
+
+const Rating = styled.div`
+  color: #797979;
+  display: inline-block;
 `;
 
 class Interests extends React.Component {
@@ -41,17 +53,20 @@ class Interests extends React.Component {
   render() {
     return (
       <Border>
-        <b>By consumer groups & interests</b>
+        <div>
+          <Title>By consumer groups & interests</Title>
+          <img src="https://s3.amazonaws.com/product-reviews-hr110/Icons/questionmark.png" alt="questionmark" height="20px" />
+        </div>
         <Descriptor>
           Headphones
           <img src="https://s3.amazonaws.com/product-reviews-hr110/Icons/stars.png" alt="stars" height="25px" />
-           4.2
+          <Rating>4.2</Rating>
         </Descriptor>
 
         <Descriptor>
           Customers in New York
           <img src="https://s3.amazonaws.com/product-reviews-hr110/Icons/stars.png" alt="stars" height="25px" />
-           4.7
+          <Rating>4.7</Rating>
         </Descriptor>
         <Descriptor style={{ textDecoration: 'none', color: '#7a7a7a' }}>
           Is this feature helpful?

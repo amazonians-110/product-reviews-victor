@@ -8,7 +8,7 @@ const Border = styled.div`
 border-top: 1px solid #e7e7e7;
 border-bottom: 1px solid #e7e7e7;
 font-size 14px;
-padding: 15px 15px 0px 0px
+padding: 15px 15px 15px 0px
 `;
 
 const Button = styled.button`
@@ -26,7 +26,13 @@ const Button = styled.button`
   box-sizing: border-box;
   width: 300px;
   height: 29px;
-  font-family: Arial,sans-serif;
+  font-family: Lato,sans-serif;
+`;
+
+const Title = styled.b`
+font-weight: bolder;
+font-size: 17px;
+line-height: 1.255;
 `;
 
 class Thoughts extends React.Component {
@@ -37,7 +43,7 @@ class Thoughts extends React.Component {
   render() {
     return (
       <Border>
-        <b>Review this product</b>
+        <Title>Review this product</Title>
         <div>Share your thoughts with other customers</div>
 
         <Button>

@@ -21,6 +21,13 @@ const Buttons = styled.button`
   font-size: 13px;
   color: #111111;
 `;
+//#00464e
+
+const Title = styled.b`
+font-weight: bolder;
+font-size: 17px;
+line-height: 1.255;
+`;
 
 class Mention extends React.Component {
   constructor(props) {
@@ -30,7 +37,7 @@ class Mention extends React.Component {
   render() {
     return (
       <div>
-        <Descriptor>Read reviews that mention</Descriptor>
+        <Title>Read reviews that mention</Title>
         <div>
           <Buttons>sound quality</Buttons>
           <Buttons>battery life</Buttons>
