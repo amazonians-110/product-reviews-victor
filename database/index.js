@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /* eslint-disable camelcase */
 const mongoose = require('mongoose');
 const faker = require('faker');
@@ -41,34 +42,38 @@ const data = {
   verified_purchase: [true, false],
 };
 
-generateImages = function () {
+const generateImages = () => {
   const imgs = [];
   const num = Math.floor(Math.random() * 10);
-  for (let i = 0; i < num; i++) {
+  for (let i = 0; i < num; i += 1) {
     imgs.push(faker.image.food());
   }
   return imgs;
 };
 
-for (let i = 1; i <= 100; i++) {
-  const review_instance = new Review({
-    product_id: i,
-    category: data.category[Math.floor(Math.random() * data.category.length)],
-    product_name: faker.commerce.productName(),
-    product_ratings: Math.floor(Math.random() * 5) + 1,
-    review: faker.lorem.sentences(),
-    review_title: faker.lorem.sentence(),
-    reviewer: faker.name.findName(),
-    images: generateImages(),
-    verified_purchase: data.verified_purchase[Math.floor(Math.random() * data.verified_purchase.length)],
-    helpful_counter: Math.floor(Math.random() * 500) + 1,
-    created_at: faker.date.past().toDateString(),
-  });
-  review_instance.save((err) => {
-    if (err) {
-      console.log(err);
-    }
-  });
+
+for (let i = 1; i <= 100; i += 1) {
+  for (let j = 1; j <= Math.floor(Math.random() * 5) + 1; j += 1) {
+    const review_instance = new Review({
+      product_id: i,
+      category: data.category[Math.floor(Math.random() * data.category.length)],
+      product_name: faker.commerce.productName(),
+      product_ratings: Math.floor(Math.random() * 5) + 1,
+      review: faker.lorem.sentences(),
+      review_title: faker.lorem.sentence(),
+      reviewer: faker.name.findName(),
+      images: generateImages(),
+      verified_purchase: data.verified_purchase[Math.floor(Math.random()
+        * data.verified_purchase.length)],
+      helpful_counter: Math.floor(Math.random() * 500) + 1,
+      created_at: faker.date.past().toDateString(),
+    });
+    review_instance.save((err) => {
+      if (err) {
+        console.log(err);
+      }
+    });
+  }
 }
 
 function grabProduct(productid, callback) {

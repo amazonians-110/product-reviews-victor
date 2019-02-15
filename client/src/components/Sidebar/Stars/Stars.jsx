@@ -82,7 +82,7 @@ class Stars extends React.Component {
           <img src="https://s3.amazonaws.com/product-reviews-hr110/Icons/downarrow.png" alt="down" height="10px" />
         </Starbox>
         <div>
-          <Links>
+          <Links href="https://www.w3schools.com/html/">
           5 star
             {'    '}
             <Bars>
@@ -92,7 +92,7 @@ class Stars extends React.Component {
           <Rating>20%</Rating>
         </div>
         <div>
-          <Links>
+          <Links href="https://www.w3schools.com/html/">
           4 star
             {'    '}
             <Bars>
@@ -102,7 +102,7 @@ class Stars extends React.Component {
           <Rating>20%</Rating>
         </div>
         <div>
-          <Links>
+          <Links href="https://www.w3schools.com/html/">
           3 star
             {'    '}
             <Bars>
@@ -112,7 +112,7 @@ class Stars extends React.Component {
           <Rating>20%</Rating>
         </div>
         <div>
-          <Links>
+          <Links href="https://www.w3schools.com/html/">
           2 star
             {'    '}
             <Bars>
@@ -122,7 +122,7 @@ class Stars extends React.Component {
           <Rating>20%</Rating>
         </div>
         <div>
-          <Links>
+          <Links href="https://www.w3schools.com/html/">
           1 star
             {'    '}
             <Bars>
