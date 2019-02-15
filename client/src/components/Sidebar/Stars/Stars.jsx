@@ -8,6 +8,10 @@ const Links = styled.a`
 color: #0066c0;
 display: inline block;
 padding: 2px;
+:hover {
+  text-decoration: underline;
+  color: #c60;
+}
 `;
 
 const Descriptor = styled.div`
@@ -16,10 +20,18 @@ font-size: 14px;
 padding: 0px 15px 0px 0px;
 `;
 
-const Number = styled.b`
+const Number = styled.button`
 color: #c76800;
-font-weight: bold;
 font-size: 17px;
+font-weight: bolder;
+border: none; 
+padding: 0;
+background-color: transparent;
+outline: none;
+text-align: left;
+:hover {
+  color: #c60;
+}
 `;
 
 const Bars = styled.div`
@@ -34,10 +46,10 @@ const Yellow = styled.div`
 background-color: #ffc200;
 width: 39px;
 height:17px;
-border-radius: 1px;
+border-radius: 2px;
 background: linear-gradient(to bottom,#ffce00,#ffa700);
 background-color: #ffce00;
-}
+border-right-color: #cc9204;
 `;
 
 const Rating = styled.div`
@@ -50,6 +62,7 @@ display: flex;
 align-items: center;
 margin-top: 7px;
 margin-bottom: 15px;
+justify-content: flex-start;
 `;
 
 class Stars extends React.Component {

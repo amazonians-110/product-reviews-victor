@@ -12,20 +12,25 @@ font-weight: bold;
 `;
 
 const Buttons = styled.button`
-  background-color: #D7E8EA;
-  padding: 0px 14px;
-  line-height: 29px;
-  margin: 10px 10px 10px 0px;
-  border-bottom: solid 1px #969696;
-  display: inline-block;
-  font-size: 13px;
-  color: #111111;
+background-color: #D7E8EA;
+padding: 0px 14px;
+line-height: 29px;
+margin: 10px 10px 10px 0px;
+border-bottom: solid 1px #969696;
+display: inline-block;
+font-size: 13px;
+color: #111111;
 `;
 
-const Title = styled.h3`
-font-weight: bolder;
+const Title = styled.button`
+font-weight: 700;
 font-size: 17px;
 line-height: 1.255;
+border: none; 
+padding: 0;
+background-color: transparent;
+outline: none;
+text-align: left;
 `;
 
 class Mention extends React.Component {

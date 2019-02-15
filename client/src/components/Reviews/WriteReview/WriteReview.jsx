@@ -6,11 +6,11 @@ import styled from 'styled-components';
 const Text = styled.div`
   color: #0066c0;
   font-size: 13px;
-  font-weight: bold; 
-`;
-
-const Wrap = styled.div`
-padding: 15px 15px 25px 0px
+  font-weight: bold;
+  :hover {
+    text-decoration: underline;
+    color: #c60;
+  }
 `;
 
 const Button = styled.button`
@@ -22,23 +22,15 @@ const Button = styled.button`
   cursor: pointer;
   display: inline-block;
   margin: 8px 0px 8px 0px;
-  text-align: center;
-  text-decoration: none!important;
-  vertical-align: middle;
   width: 160px;
   height: 29px;
   font-family: Lato, sans-serif;
-  font-weight: bolder;
 `;
 
 class WriteReview extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
-      <Wrap>
+      <div>
         <Text>
           See all 453 reviews
         </Text>
@@ -46,7 +38,7 @@ class WriteReview extends React.Component {
         <Button>
           Write a customer review
         </Button>
-      </Wrap>
+      </div>
     );
   }
 }

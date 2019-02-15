@@ -32,12 +32,20 @@ const Button = styled.button`
   width: 50px;
   height: 20px;
   font-family: Lato,sans-serif;
+  :hover {
+    background: #e7e9ec;
+  }
 `;
 
-const Title = styled.b`
+const Title = styled.button`
 font-weight: bolder;
 font-size: 17px;
 line-height: 1.255;
+border: none; 
+padding: 0;
+background-color: transparent;
+outline: none;
+text-align: left;
 `;
 
 const Rating = styled.div`

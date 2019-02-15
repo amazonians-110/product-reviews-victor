@@ -17,10 +17,15 @@ font-size 14px;
 padding: 15px 15px 15px 0px
 `;
 
-const Title = styled.b`
+const Title = styled.button`
 font-weight: bolder;
 font-size: 17px;
 line-height: 1.255;
+border: none; 
+padding: 0;
+background-color: transparent;
+outline: none;
+text-align: left;
 `;
 
 const Rating = styled.div`

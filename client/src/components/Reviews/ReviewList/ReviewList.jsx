@@ -23,6 +23,9 @@ const Button = styled.button`
   box-sizing: border-box;
   width: 100px;
   height: 29px;
+  :hover {
+    background: #e7e9ec;
+  }
 `;
 
 const Select = styled.select`
@@ -36,8 +39,15 @@ const Reviews = styled.div`
   font-size: 13px;  
 `;
 
-const Title = styled.b`
-  font-weight: bolder;
+const Title = styled.button`
+font-weight: 700;
+font-size: 12px;
+line-height: 1.255;
+border: none; 
+padding: 0;
+background-color: transparent;
+outline: none;
+text-align: left;
 `;
 
 const Starbox = styled.div`
@@ -45,17 +55,20 @@ display: flex;
 align-items: center;
 `;
 
+const Space = styled.div`
+margin: 10px 10px 10px 0px;
+`;
+
 class ReviewList extends React.Component {
   constructor(props) {
     super(props);
   }
 
-
   render() {
     return (
       <div>
+        <Title>Showing 1-8 of 453 reviews</Title>
         <div>
-          <h5>Showing 1-8 of 453 reviews</h5>
           <Select name="reviews">
             <option value="Top Reviews">Top Reviews</option>
             <option value="Most recent">Most recent</option>
@@ -64,15 +77,17 @@ class ReviewList extends React.Component {
 
         <Reviews>
           <div>
-            <img
-              src="https://s3.amazonaws.com/product-reviews-hr110/Icons/avatar.png"
-              height="30px"
-              width="30px"
-              alt="avatar"
-              max-width="100%"
-              display="block"
-            />
-            Victor Liu
+            <Starbox>
+              <img
+                src="https://s3.amazonaws.com/product-reviews-hr110/Icons/avatar.png"
+                height="30px"
+                width="30px"
+                alt="avatar"
+                max-width="100%"
+                display="block"
+              /> 
+              Victor Liu
+            </Starbox>
             <Starbox>
               <img src="https://s3.amazonaws.com/product-reviews-hr110/Icons/stars.png" alt="stars" height="25px" />
               <Title> Quod soluta quas ipsam autem dolor libero dolor qui repudiandae.</Title>
@@ -87,17 +102,19 @@ class ReviewList extends React.Component {
             <div>
               301 people found this helpful
             </div>
-            <div>
+            <Space>
               <Button>Helpful</Button> |
               <a href="https://www.w3schools.com/html/" style={{ textDecoration: 'none', color: '#7a7a7a' }}>Comment</a> |
               <a href="https://www.w3schools.com/html/" style={{ textDecoration: 'none', color: '#7a7a7a' }}>Report abuse</a>
-            </div>
+            </Space>
           </div>
         </Reviews>
 
         <Reviews>
-          <img src="https://s3.amazonaws.com/product-reviews-hr110/Icons/avatar.png" height="30px" width="30px" alt="avatar" />
+          <Starbox>
+            <img src="https://s3.amazonaws.com/product-reviews-hr110/Icons/avatar.png" height="30px" width="30px" alt="avatar" />
             Grace Shei
+          </Starbox>
           <Starbox>
             <img src="https://s3.amazonaws.com/product-reviews-hr110/Icons/stars.png" alt="stars" height="25px" />
             <Title> Quod soluta quas ipsam autem dolor libero dolor qui repudiandae.</Title>
@@ -120,8 +137,10 @@ class ReviewList extends React.Component {
         </Reviews>
 
         <Reviews>
-          <img src="https://s3.amazonaws.com/product-reviews-hr110/Icons/avatar.png" height="30px" width="30px" alt="avatar" />
+          <Starbox>
+            <img src="https://s3.amazonaws.com/product-reviews-hr110/Icons/avatar.png" height="30px" width="30px" alt="avatar" />
           Chris Tso
+          </Starbox>
           <Starbox>
             <img src="https://s3.amazonaws.com/product-reviews-hr110/Icons/stars.png" alt="stars" height="25px" />
             <Title> Quod soluta quas ipsam autem dolor libero dolor qui repudiandae.</Title>
