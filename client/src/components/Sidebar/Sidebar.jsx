@@ -9,14 +9,11 @@ import Interests from './Interests/Interests.jsx';
 import Thoughts from './Thoughts/Thoughts.jsx';
 
 const Boxes = styled.div`
-
   flex-direction: column;
-
   align-items: stretch;
   justify-content: stretch;
   padding: 10px;
   padding-right: 25px;
-
 `;
 
 class Reviews extends React.Component {

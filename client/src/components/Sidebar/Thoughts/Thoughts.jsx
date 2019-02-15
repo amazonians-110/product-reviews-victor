@@ -12,27 +12,32 @@ padding: 15px 15px 15px 0px
 `;
 
 const Button = styled.button`
-  background: #eff1f3;
-  border-radius: 3px;
-  border-color: #ADB1B8 #A2A6AC #8D9096;
-  border-style: solid;
-  border-width: 1px;
-  cursor: pointer;
-  display: inline-block;
-  margin: 4px;
-  text-align: center;
-  text-decoration: none!important;
-  vertical-align: middle;
-  box-sizing: border-box;
-  width: 300px;
-  height: 29px;
-  font-family: Lato,sans-serif;
+background: #eff1f3;
+border-radius: 3px;
+border-color: #ADB1B8 #A2A6AC #8D9096;
+border-style: solid;
+border-width: 1px;
+cursor: pointer;
+display: inline-block;
+margin: 4px;
+text-align: center;
+text-decoration: none!important;
+vertical-align: middle;
+box-sizing: border-box;
+width: 300px;
+height: 29px;
+font-family: Lato,sans-serif;
 `;
 
 const Title = styled.b`
 font-weight: bolder;
 font-size: 17px;
 line-height: 1.255;
+`;
+
+const Borderbox = styled.div`
+margin-top: 10px;
+margin-bottom: 10px;
 `;
 
 class Thoughts extends React.Component {
@@ -44,7 +49,7 @@ class Thoughts extends React.Component {
     return (
       <Border>
         <Title>Review this product</Title>
-        <div>Share your thoughts with other customers</div>
+        <Borderbox>Share your thoughts with other customers</Borderbox>
 
         <Button>
           <a href="https://www.w3schools.com/html/" style={{ textDecoration: 'none', color: 'black' }}>Write a customer review</a>

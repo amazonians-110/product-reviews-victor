@@ -21,9 +21,8 @@ const Buttons = styled.button`
   font-size: 13px;
   color: #111111;
 `;
-//#00464e
 
-const Title = styled.b`
+const Title = styled.h3`
 font-weight: bolder;
 font-size: 17px;
 line-height: 1.255;

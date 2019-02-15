@@ -28,6 +28,13 @@ const Rating = styled.div`
   display: inline-block;
 `;
 
+const Keep = styled.div`
+display: flex;
+align-items: center;
+margin-top: 7px;
+margin-bottom: 7px;
+`;
+
 class Feature extends React.Component {
   constructor(props) {
     super(props);
@@ -39,20 +46,24 @@ class Feature extends React.Component {
         <Title>By feature</Title>
         <Descriptor>
           Sound quality
-          <div display="inline">
+          <Keep>
             <img src="https://s3.amazonaws.com/product-reviews-hr110/Icons/stars.png" alt="stars" height="25px" />
-          </div>
-          <Rating>4.4</Rating>
+            <Rating>4.4</Rating>
+          </Keep>
         </Descriptor>
         <Descriptor>
           Battery life
-          <img src="https://s3.amazonaws.com/product-reviews-hr110/Icons/stars.png" alt="stars" height="25px" />
-          <Rating>4.1</Rating>
+          <Keep>
+            <img src="https://s3.amazonaws.com/product-reviews-hr110/Icons/stars.png" alt="stars" height="25px" />
+            <Rating>4.1</Rating>
+          </Keep>
         </Descriptor>
         <Descriptor>
           Noise cancellation
-          <img src="https://s3.amazonaws.com/product-reviews-hr110/Icons/stars.png" alt="stars" height="25px" />
-          <Rating>4.1</Rating>
+          <Keep>
+            <img src="https://s3.amazonaws.com/product-reviews-hr110/Icons/stars.png" alt="stars" height="25px" />
+            <Rating>4.1</Rating>
+          </Keep>
         </Descriptor>
       </Border>
     );

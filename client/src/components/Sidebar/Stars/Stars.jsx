@@ -10,18 +10,16 @@ display: inline block;
 padding: 2px;
 `;
 
-const Number = styled.b`
-color: #c76800;
-font-weight: bolder;
-font-size: 17px;
-line-height: 1.3;
-`;
-
 const Descriptor = styled.div`
 padding: 2px;
 font-size: 14px;
 padding: 0px 15px 0px 0px;
-vertical-align: text-bottom;
+`;
+
+const Number = styled.b`
+color: #c76800;
+font-weight: bold;
+font-size: 17px;
 `;
 
 const Bars = styled.div`
@@ -43,13 +41,15 @@ background-color: #ffce00;
 `;
 
 const Rating = styled.div`
-  color: #797979;
-  display: inline-block;
+color: #797979;
+display: inline-block;
 `;
 
 const Starbox = styled.div`
 display: flex;
 align-items: center;
+margin-top: 7px;
+margin-bottom: 15px;
 `;
 
 class Stars extends React.Component {
@@ -64,6 +64,7 @@ class Stars extends React.Component {
         <div />
         <Starbox>
           <img src="https://s3.amazonaws.com/product-reviews-hr110/Icons/stars.png" alt="stars" height="25px" />
+          {'   '}
            4.2 out of 5 stars
           <img src="https://s3.amazonaws.com/product-reviews-hr110/Icons/downarrow.png" alt="down" height="10px" />
         </Starbox>

@@ -45,6 +45,13 @@ const Rating = styled.div`
   display: inline-block;
 `;
 
+const Starbox = styled.div`
+display: flex;
+align-items: center;
+margin-top: 7px;
+margin-bottom: 7px;
+`;
+
 class Interests extends React.Component {
   constructor(props) {
     super(props);
@@ -53,20 +60,24 @@ class Interests extends React.Component {
   render() {
     return (
       <Border>
-        <div>
+        <Starbox>
           <Title>By consumer groups & interests</Title>
           <img src="https://s3.amazonaws.com/product-reviews-hr110/Icons/questionmark.png" alt="questionmark" height="20px" />
-        </div>
+        </Starbox>
         <Descriptor>
           Headphones
-          <img src="https://s3.amazonaws.com/product-reviews-hr110/Icons/stars.png" alt="stars" height="25px" />
-          <Rating>4.2</Rating>
+          <Starbox>
+            <img src="https://s3.amazonaws.com/product-reviews-hr110/Icons/stars.png" alt="stars" height="25px" />
+            <Rating>4.2</Rating>
+          </Starbox>
         </Descriptor>
 
         <Descriptor>
           Customers in New York
-          <img src="https://s3.amazonaws.com/product-reviews-hr110/Icons/stars.png" alt="stars" height="25px" />
-          <Rating>4.7</Rating>
+          <Starbox>
+            <img src="https://s3.amazonaws.com/product-reviews-hr110/Icons/stars.png" alt="stars" height="25px" />
+            <Rating>4.7</Rating>
+          </Starbox>
         </Descriptor>
         <Descriptor style={{ textDecoration: 'none', color: '#7a7a7a' }}>
           Is this feature helpful?
