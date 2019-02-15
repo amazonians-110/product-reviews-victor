@@ -33,7 +33,7 @@ const Rating = styled.div`
   display: inline-block;
 `;
 
-const Keep = styled.div`
+const StarRatingContainer = styled.div`
 display: flex;
 align-items: center;
 margin-top: 7px;
@@ -51,24 +51,24 @@ class Feature extends React.Component {
         <Title>By feature</Title>
         <Descriptor>
           Sound quality
-          <Keep>
+          <StarRatingContainer>
             <img src="https://s3.amazonaws.com/product-reviews-hr110/Icons/stars.png" alt="stars" height="25px" />
             <Rating>4.4</Rating>
-          </Keep>
+          </StarRatingContainer>
         </Descriptor>
         <Descriptor>
           Battery life
-          <Keep>
+          <StarRatingContainer>
             <img src="https://s3.amazonaws.com/product-reviews-hr110/Icons/stars.png" alt="stars" height="25px" />
             <Rating>4.1</Rating>
-          </Keep>
+          </StarRatingContainer>
         </Descriptor>
         <Descriptor>
           Noise cancellation
-          <Keep>
+          <StarRatingContainer>
             <img src="https://s3.amazonaws.com/product-reviews-hr110/Icons/stars.png" alt="stars" height="25px" />
             <Rating>4.1</Rating>
-          </Keep>
+          </StarRatingContainer>
         </Descriptor>
       </Border>
     );
