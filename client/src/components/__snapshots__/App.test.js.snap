@@ -1,12 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`App should render correctly 1`] = `
-<div>
-  <styled.div>
-    <Reviews />
-  </styled.div>
-  <styled.div>
-    <Reviews />
-  </styled.div>
-</div>
+<styled.div>
+  <Reviews />
+  <Reviews />
+</styled.div>
 `;

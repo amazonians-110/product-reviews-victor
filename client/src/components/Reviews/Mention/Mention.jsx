@@ -1,6 +1,37 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/button-has-type */
 /* eslint-disable no-useless-constructor */
 /* eslint-disable react/prefer-stateless-function */
 import React from 'react';
+import styled from 'styled-components';
+
+const Descriptor = styled.div`
+padding: 2px;
+font-size: 14px;
+font-weight: bold;
+`;
+
+const Buttons = styled.button`
+background-color: #D7E8EA;
+padding: 0px 14px;
+line-height: 29px;
+margin: 10px 10px 10px 0px;
+border-bottom: solid 1px #969696;
+display: inline-block;
+font-size: 13px;
+color: #111111;
+`;
+
+const Title = styled.button`
+font-weight: 700;
+font-size: 17px;
+line-height: 1.255;
+border: none; 
+padding: 0;
+background-color: transparent;
+outline: none;
+text-align: left;
+`;
 
 class Mention extends React.Component {
   constructor(props) {
@@ -10,24 +41,24 @@ class Mention extends React.Component {
   render() {
     return (
       <div>
-        <b>Read reviews that mention</b>
+        <Title>Read reviews that mention</Title>
         <div>
-          <input type="submit" value="sound quality" />
-          <input type="submit" value="battery life" />
-          <input type="submit" value="highly charging case" />
-          <input type="submit" value="wireless earbuds" />
+          <Buttons>sound quality</Buttons>
+          <Buttons>battery life</Buttons>
+          <Buttons>charging case</Buttons>
+          <Buttons>wireless earbuds</Buttons>
         </div>
         <div>
-          <input type="submit" value="noise cancelling" />
-          <input type="submit" value="highly recommend" />
-          <input type="submit" value="noise cancellation" />
-          <input type="submit" value="rose gold" />
+          <Buttons>noise cancelling</Buttons>
+          <Buttons>highly recommend</Buttons>
+          <Buttons>noise cancellation</Buttons>
+          <Buttons>rose gold</Buttons>
         </div>
         <div>
-          <input type="submit" value="definitely recommend" />
-          <input type="submit" value="left earbud" />
-          <input type="submit" value="listening to music" />
-          <input type="submit" value="left and right" />
+          <Buttons>listening to music</Buttons>
+          <Buttons>definitely recommend</Buttons>
+          <Buttons>left earbud</Buttons>
+          <Buttons>left and right</Buttons>
         </div>
       </div>
     );

@@ -7,10 +7,11 @@ import Sidebar from './Sidebar/Sidebar.jsx';
 import Reviews from './Reviews/Reviews.jsx';
 
 const LeftRight = styled.div`
-  display: inline-block
-  border: 1px
-  border-style: solid
-  padding: 50px
+display: flex;
+flex-direction: row;
+align-items: stretch;
+justify-content: space-between;
+font-family: 'Lato', sans-serif;
 `;
 
 class App extends React.Component {
@@ -20,15 +21,10 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
-        <LeftRight>
-          <Sidebar />
-        </LeftRight>
-
-        <LeftRight>
-          <Reviews />
-        </LeftRight>
-      </div>
+      <LeftRight>
+        <Sidebar />
+        <Reviews />
+      </LeftRight>
     );
   }
 }

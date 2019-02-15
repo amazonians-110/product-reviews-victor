@@ -1,16 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Thoughts should render correctly 1`] = `
-<div>
+<styled.div>
   <b>
     Review this product
   </b>
   <div>
     Share your thoughts with other customers
   </div>
-  <input
-    type="submit"
-    value="Write a customer review"
-  />
-</div>
+  <styled.button>
+    <a
+      href="https://www.w3schools.com/html/"
+      style={
+        Object {
+          "color": "black",
+          "textDecoration": "none",
+        }
+      }
+    >
+      Write a customer review
+    </a>
+  </styled.button>
+</styled.div>
 `;

@@ -5,9 +5,36 @@ exports[`Images should render correctly 1`] = `
   <b>
     Customer Images
   </b>
-  <div />
-  <h6>
+  <div>
+    <styled.img
+      alt="food"
+      height="144"
+      src="http://lorempixel.com/640/480/food"
+      width="144"
+    />
+    <styled.img
+      alt="cat"
+      height="144"
+      src="http://lorempixel.com/640/480/cats"
+      width="144"
+    />
+    <styled.img
+      alt="sports"
+      height="144"
+      src="http://lorempixel.com/640/480/sports"
+      width="144"
+    />
+    <styled.img
+      alt="transportation"
+      height="144"
+      src="http://lorempixel.com/640/480/transport"
+      width="144"
+    />
+  </div>
+  <styled.a
+    href="https://www.w3schools.com/html/"
+  >
     See all customer images
-  </h6>
+  </styled.a>
 </div>
 `;

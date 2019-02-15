@@ -9,8 +9,11 @@ import Interests from './Interests/Interests.jsx';
 import Thoughts from './Thoughts/Thoughts.jsx';
 
 const Boxes = styled.div`
-  margin: 1px
-  padding: 20px
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: stretch;
+  padding: 10px;
+  padding-right: 25px;
 `;
 
 class Reviews extends React.Component {
@@ -22,7 +25,6 @@ class Reviews extends React.Component {
     return (
       <div>
         <Boxes>
-          <b>453 customer reviews</b>
           <Stars />
         </Boxes>
         <Boxes>
