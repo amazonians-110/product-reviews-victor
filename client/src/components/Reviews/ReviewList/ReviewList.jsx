@@ -6,8 +6,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const axios = require('axios');
-
 const Button = styled.button`
   background: #eff1f3;
   border-radius: 3px;
@@ -26,6 +24,7 @@ const Button = styled.button`
   :hover {
     background: #e7e9ec;
   }
+  font-size: 13px;
 `;
 
 const Select = styled.select`

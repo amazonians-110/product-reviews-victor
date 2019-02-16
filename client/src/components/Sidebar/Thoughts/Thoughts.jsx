@@ -27,7 +27,7 @@ box-sizing: border-box;
 width: 300px;
 height: 29px;
 font-family: Lato,sans-serif;
-
+font-size: 13px;
 :hover {
   background: #e7e9ec;
 }
