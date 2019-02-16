@@ -5,24 +5,7 @@
 /* eslint-disable no-useless-constructor */
 /* eslint-disable react/prefer-stateless-function */
 import React from 'react';
-import styled from 'styled-components';
-
-const Title = styled.button`
-font-weight: 700;
-font-size: 17px;
-line-height: 1.255;
-border: none; 
-padding: 0;
-background-color: transparent;
-outline: none;
-text-align: left;
-`;
-
-const Container = styled.div`
-display: flex;
-align-items: row;
-align-content: space-around;
-`;
+import { Title, Container } from './Mention.style';
 
 class Buttons extends React.Component {
   constructor(props) {
@@ -100,15 +83,3 @@ class Mention extends React.Component {
 }
 
 export default Mention;
-
-
-// const Button = styled.button`
-// background-color: #D7E8EA;
-// padding: 0px 14px;
-// line-height: 29px;
-// margin: 10px 10px 10px 0px;
-// border-bottom: solid 1px #969696;
-// display: flex;
-// font-size: 13px;
-// color: #111111;
-// `;

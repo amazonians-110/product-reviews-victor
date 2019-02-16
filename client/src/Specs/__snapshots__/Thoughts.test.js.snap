@@ -2,15 +2,15 @@
 
 exports[`Thoughts should render correctly 1`] = `
 <styled.div>
-  <b>
+  <styled.button>
     Review this product
-  </b>
-  <div>
+  </styled.button>
+  <styled.div>
     Share your thoughts with other customers
-  </div>
+  </styled.div>
   <styled.button>
     <a
-      href="https://www.w3schools.com/html/"
+      href="#top"
       style={
         Object {
           "color": "black",
