@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-one-expression-per-line */
 /* eslint-disable react/self-closing-comp */
 /* eslint-disable no-useless-constructor */
 /* eslint-disable react/prefer-stateless-function */
@@ -65,6 +66,29 @@ margin-bottom: 15px;
 justify-content: flex-start;
 `;
 
+const Tooltiptext = styled.div`
+  visibility: hidden;
+  width: 400px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border-radius: 3px;
+  padding: 10px;
+  border: 1px solid #f1f3f5;
+  position: absolute;
+  z-index: 1;
+`;
+
+const Tooltip = styled.div`
+position: relative;
+display: inline-block;
+
+&:hover ${Tooltiptext} {
+  visibility: visible;
+}
+`;
+
+
 class Stars extends React.Component {
   constructor(props) {
     super(props);
@@ -78,11 +102,21 @@ class Stars extends React.Component {
         <Starbox>
           <img src="https://s3.amazonaws.com/product-reviews-hr110/Icons/stars.png" alt="stars" height="25px" />
           {'   '}
-           4.2 out of 5 stars
-          <img src="https://s3.amazonaws.com/product-reviews-hr110/Icons/downarrow.png" alt="down" height="10px" />
+          <Tooltip>
+            4.2 out of 5 stars
+            <img src="https://s3.amazonaws.com/product-reviews-hr110/Icons/downarrow.png" alt="down" height="10px" />
+            <Tooltiptext>
+            Amazon calculates a product’s star ratings based on a
+            machine learned model instead of a raw data average. The
+            model takes into account factors including the age of a rating,
+            whether the ratings are from verified purchasers, and factors that
+            establish reviewer trustworthiness.
+            </Tooltiptext>
+          </Tooltip>
         </Starbox>
+
         <div>
-          <Links href="https://www.w3schools.com/html/">
+          <Links href="#top">
           5 star
             {'    '}
             <Bars>
@@ -92,7 +126,7 @@ class Stars extends React.Component {
           <Rating>20%</Rating>
         </div>
         <div>
-          <Links href="https://www.w3schools.com/html/">
+          <Links href="#top">
           4 star
             {'    '}
             <Bars>
@@ -102,7 +136,7 @@ class Stars extends React.Component {
           <Rating>20%</Rating>
         </div>
         <div>
-          <Links href="https://www.w3schools.com/html/">
+          <Links href="#top">
           3 star
             {'    '}
             <Bars>
@@ -112,7 +146,7 @@ class Stars extends React.Component {
           <Rating>20%</Rating>
         </div>
         <div>
-          <Links href="https://www.w3schools.com/html/">
+          <Links href="#top">
           2 star
             {'    '}
             <Bars>
@@ -122,7 +156,7 @@ class Stars extends React.Component {
           <Rating>20%</Rating>
         </div>
         <div>
-          <Links href="https://www.w3schools.com/html/">
+          <Links href="#top">
           1 star
             {'    '}
             <Bars>

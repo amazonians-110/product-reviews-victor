@@ -13,7 +13,7 @@ const Boxes = styled.div`
   align-items: stretch;
   justify-content: stretch;
   padding: 10px;
-  padding-right: 25px;
+  padding-right: 50px;
 `;
 
 class Reviews extends React.Component {

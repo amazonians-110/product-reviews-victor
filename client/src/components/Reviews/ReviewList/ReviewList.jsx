@@ -85,7 +85,7 @@ class ReviewList extends React.Component {
                 alt="avatar"
                 max-width="100%"
                 display="block"
-              /> 
+              />
               Victor Liu
             </Starbox>
             <Starbox>
@@ -104,8 +104,8 @@ class ReviewList extends React.Component {
             </div>
             <Space>
               <Button>Helpful</Button> |
-              <a href="https://www.w3schools.com/html/" style={{ textDecoration: 'none', color: '#7a7a7a' }}>Comment</a> |
-              <a href="https://www.w3schools.com/html/" style={{ textDecoration: 'none', color: '#7a7a7a' }}>Report abuse</a>
+              <a href="#top" style={{ textDecoration: 'none', color: '#7a7a7a' }}>Comment</a> |
+              <a href="#top" style={{ textDecoration: 'none', color: '#7a7a7a' }}>Report abuse</a>
             </Space>
           </div>
         </Reviews>
@@ -113,7 +113,7 @@ class ReviewList extends React.Component {
         <Reviews>
           <Starbox>
             <img src="https://s3.amazonaws.com/product-reviews-hr110/Icons/avatar.png" height="30px" width="30px" alt="avatar" />
-            Grace Shei
+            Andrew Mitchell
           </Starbox>
           <Starbox>
             <img src="https://s3.amazonaws.com/product-reviews-hr110/Icons/stars.png" alt="stars" height="25px" />
@@ -129,11 +129,11 @@ class ReviewList extends React.Component {
           <div>
               107 people found this helpful
           </div>
-          <div>
+          <Space>
             <Button>Helpful</Button> |
-            <a href="https://www.w3schools.com/html/" style={{ textDecoration: 'none', color: '#7a7a7a' }}>Comment</a> |
-            <a href="https://www.w3schools.com/html/" style={{ textDecoration: 'none', color: '#7a7a7a' }}>Report abuse</a>
-          </div>
+            <a href="#top" style={{ textDecoration: 'none', color: '#7a7a7a' }}>Comment</a> |
+            <a href="#top" style={{ textDecoration: 'none', color: '#7a7a7a' }}>Report abuse</a>
+          </Space>
         </Reviews>
 
         <Reviews>
@@ -155,11 +155,11 @@ class ReviewList extends React.Component {
           <div>
               888 people found this helpful
           </div>
-          <div>
+          <Space>
             <Button>Helpful</Button> |
-            <a href="https://www.w3schools.com/html/" style={{ textDecoration: 'none', color: '#7a7a7a' }}>Comment</a> |
-            <a href="https://www.w3schools.com/html/" style={{ textDecoration: 'none', color: '#7a7a7a' }}>Report abuse</a>          
-          </div>
+            <a href="#top" style={{ textDecoration: 'none', color: '#7a7a7a' }}>Comment</a> |
+            <a href="#top" style={{ textDecoration: 'none', color: '#7a7a7a' }}>Report abuse</a>          
+          </Space>
         </Reviews>
       </div>
     );
