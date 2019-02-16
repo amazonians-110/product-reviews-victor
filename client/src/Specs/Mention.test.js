@@ -5,9 +5,19 @@ import { shallow } from 'enzyme';
 
 import Mention from '../components/Reviews/Mention/Mention';
 
+import Buttons from '../components/Reviews/Mention/Buttons';
+
 describe('Mention', () => {
   it('should render correctly', () => {
     const component = shallow(<Mention />);
+
+    expect(component).toMatchSnapshot();
+  });
+});
+
+describe('Buttons', () => {
+  it('should render correctly', () => {
+    const component = shallow(<Buttons />);
 
     expect(component).toMatchSnapshot();
   });

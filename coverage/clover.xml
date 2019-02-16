@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1550303499638" clover="3.2.0">
+  <project timestamp="1550303499639" name="All files">
+    <metrics statements="74" coveredstatements="72" conditionals="4" coveredconditionals="2" methods="24" coveredmethods="22" elements="102" coveredelements="96" complexity="0" loc="74" ncloc="74" packages="11" files="21" classes="21"/>
+    <package name="components">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="App.jsx" path="/Users/victorliu/Desktop/product-reviews-victor/client/src/components/App.jsx">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.Reviews">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="Review.style.js" path="/Users/victorliu/Desktop/product-reviews-victor/client/src/components/Reviews/Review.style.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+      </file>
+      <file name="Reviews.jsx" path="/Users/victorliu/Desktop/product-reviews-victor/client/src/components/Reviews/Reviews.jsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.Reviews.Images">
+      <metrics statements="9" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="3"/>
+      <file name="Images.jsx" path="/Users/victorliu/Desktop/product-reviews-victor/client/src/components/Reviews/Images/Images.jsx">
+        <metrics statements="6" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="3"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+      </file>
+      <file name="Images.style.js" path="/Users/victorliu/Desktop/product-reviews-victor/client/src/components/Reviews/Images/Images.style.js">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="13" count="3" type="stmt"/>
+        <line num="24" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.Reviews.Mention">
+      <metrics statements="12" coveredstatements="11" conditionals="4" coveredconditionals="2" methods="4" coveredmethods="3"/>
+      <file name="Buttons.jsx" path="/Users/victorliu/Desktop/product-reviews-victor/client/src/components/Reviews/Mention/Buttons.jsx">
+        <metrics statements="9" coveredstatements="8" conditionals="4" coveredconditionals="2" methods="3" coveredmethods="2"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="22" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="23" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
+      </file>
+      <file name="Mention.jsx" path="/Users/victorliu/Desktop/product-reviews-victor/client/src/components/Reviews/Mention/Mention.jsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="13" count="1" type="stmt"/>
+      </file>
+      <file name="Mention.style.js" path="/Users/victorliu/Desktop/product-reviews-victor/client/src/components/Reviews/Mention/Mention.style.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="14" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.Reviews.ReviewList">
+      <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="ReviewList.jsx" path="/Users/victorliu/Desktop/product-reviews-victor/client/src/components/Reviews/ReviewList/ReviewList.jsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="12" count="1" type="stmt"/>
+      </file>
+      <file name="ReviewList.style.js" path="/Users/victorliu/Desktop/product-reviews-victor/client/src/components/Reviews/ReviewList/ReviewList.style.js">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="24" count="3" type="stmt"/>
+        <line num="29" count="3" type="stmt"/>
+        <line num="35" count="3" type="stmt"/>
+        <line num="46" count="3" type="stmt"/>
+        <line num="51" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.Reviews.WriteReview">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="WriteReview.jsx" path="/Users/victorliu/Desktop/product-reviews-victor/client/src/components/Reviews/WriteReview/WriteReview.jsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="8" count="1" type="stmt"/>
+      </file>
+      <file name="WriteReview.style.js" path="/Users/victorliu/Desktop/product-reviews-victor/client/src/components/Reviews/WriteReview/WriteReview.style.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="13" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.Sidebar">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="Sidebar.jsx" path="/Users/victorliu/Desktop/product-reviews-victor/client/src/components/Sidebar/Sidebar.jsx">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.Sidebar.Feature">
+      <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="Feature.jsx" path="/Users/victorliu/Desktop/product-reviews-victor/client/src/components/Sidebar/Feature/Feature.jsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+      </file>
+      <file name="Feature.style.js" path="/Users/victorliu/Desktop/product-reviews-victor/client/src/components/Sidebar/Feature/Feature.style.js">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="16" count="3" type="stmt"/>
+        <line num="27" count="3" type="stmt"/>
+        <line num="32" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.Sidebar.Interests">
+      <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="Interests.jsx" path="/Users/victorliu/Desktop/product-reviews-victor/client/src/components/Sidebar/Interests/Interests.jsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+      </file>
+      <file name="Interests.style.js" path="/Users/victorliu/Desktop/product-reviews-victor/client/src/components/Sidebar/Interests/Interests.style.js">
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="16" count="3" type="stmt"/>
+        <line num="36" count="3" type="stmt"/>
+        <line num="47" count="3" type="stmt"/>
+        <line num="52" count="3" type="stmt"/>
+        <line num="59" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.Sidebar.Stars">
+      <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="Stars.jsx" path="/Users/victorliu/Desktop/product-reviews-victor/client/src/components/Sidebar/Stars/Stars.jsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+      </file>
+      <file name="Stars.style.js" path="/Users/victorliu/Desktop/product-reviews-victor/client/src/components/Sidebar/Stars/Stars.style.js">
+        <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="14" count="3" type="stmt"/>
+        <line num="20" count="3" type="stmt"/>
+        <line num="34" count="3" type="stmt"/>
+        <line num="42" count="3" type="stmt"/>
+        <line num="52" count="3" type="stmt"/>
+        <line num="57" count="3" type="stmt"/>
+        <line num="65" count="3" type="stmt"/>
+        <line num="78" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.Sidebar.Thoughts">
+      <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="Thoughts.jsx" path="/Users/victorliu/Desktop/product-reviews-victor/client/src/components/Sidebar/Thoughts/Thoughts.jsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+      </file>
+      <file name="Thoughts.style.js" path="/Users/victorliu/Desktop/product-reviews-victor/client/src/components/Sidebar/Thoughts/Thoughts.style.js">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="32" count="3" type="stmt"/>
+        <line num="43" count="3" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

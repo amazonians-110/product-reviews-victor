@@ -1,5 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Buttons should render correctly 1`] = `
+<div>
+  <button
+    onClick={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#d6e8ea",
+        "boxShadow": "none",
+        "color": "black",
+        "fontSize": "13px",
+        "lineHeight": "29px",
+        "margin": "10px 10px 10px 0px",
+        "outline": "none",
+        "padding": "0px 14px",
+      }
+    }
+  >
+    charging case
+  </button>
+</div>
+`;
+
 exports[`Mention should render correctly 1`] = `
 <div>
   <styled.button>
