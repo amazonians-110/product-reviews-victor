@@ -2,10 +2,10 @@
 
 exports[`ReviewList should render correctly 1`] = `
 <div>
+  <styled.button>
+    Showing 1-8 of 453 reviews
+  </styled.button>
   <div>
-    <h5>
-      Showing 1-8 of 453 reviews
-    </h5>
     <styled.select
       name="reviews"
     >
@@ -23,25 +23,27 @@ exports[`ReviewList should render correctly 1`] = `
   </div>
   <styled.div>
     <div>
-      <img
-        alt="avatar"
-        display="block"
-        height="30px"
-        max-width="100%"
-        src="https://s3.amazonaws.com/product-reviews-hr110/Icons/avatar.png"
-        width="30px"
-      />
-      Victor Liu
-      <div>
+      <styled.div>
+        <img
+          alt="avatar"
+          display="block"
+          height="30px"
+          max-width="100%"
+          src="https://s3.amazonaws.com/product-reviews-hr110/Icons/avatar.png"
+          width="30px"
+        />
+        Colleen Marquardt
+      </styled.div>
+      <styled.div>
         <img
           alt="stars"
           height="25px"
           src="https://s3.amazonaws.com/product-reviews-hr110/Icons/stars.png"
         />
-        <b>
+        <styled.button>
            Quod soluta quas ipsam autem dolor libero dolor qui repudiandae.
-        </b>
-      </div>
+        </styled.button>
+      </styled.div>
       <div>
         September 18, 2018
       </div>
@@ -51,13 +53,13 @@ exports[`ReviewList should render correctly 1`] = `
       <div>
         301 people found this helpful
       </div>
-      <div>
+      <styled.div>
         <styled.button>
           Helpful
         </styled.button>
          |
         <a
-          href="https://www.w3schools.com/html/"
+          href="#top"
           style={
             Object {
               "color": "#7a7a7a",
@@ -69,7 +71,7 @@ exports[`ReviewList should render correctly 1`] = `
         </a>
          |
         <a
-          href="https://www.w3schools.com/html/"
+          href="#top"
           style={
             Object {
               "color": "#7a7a7a",
@@ -79,29 +81,31 @@ exports[`ReviewList should render correctly 1`] = `
         >
           Report abuse
         </a>
-      </div>
+      </styled.div>
     </div>
   </styled.div>
   <styled.div>
-    <img
-      alt="avatar"
-      height="30px"
-      src="https://s3.amazonaws.com/product-reviews-hr110/Icons/avatar.png"
-      width="30px"
-    />
-    Grace Shei
-    <div>
+    <styled.div>
+      <img
+        alt="avatar"
+        height="30px"
+        src="https://s3.amazonaws.com/product-reviews-hr110/Icons/avatar.png"
+        width="30px"
+      />
+      Ms. Calista Buckridge
+    </styled.div>
+    <styled.div>
       <img
         alt="stars"
         height="25px"
         src="https://s3.amazonaws.com/product-reviews-hr110/Icons/stars.png"
       />
-      <b>
+      <styled.button>
          Quod soluta quas ipsam autem dolor libero dolor qui repudiandae.
-      </b>
-    </div>
+      </styled.button>
+    </styled.div>
     <div>
-      September 18, 2018
+      August 9, 2018
     </div>
     <p>
       "Pariatur dolorum voluptate commodi iusto omnis alias sed enim rem. Quis omnis ipsam aliquid dolores. Tempore consequuntur dolor est excepturi. Cum et doloremque aut as Id voluptatem sint. Labore vero perferendis omnis voluptatem., "review_title": "Quod soluta quas ipsam autem dolor libero dolor qui repudiandae."
@@ -109,13 +113,13 @@ exports[`ReviewList should render correctly 1`] = `
     <div>
       107 people found this helpful
     </div>
-    <div>
+    <styled.div>
       <styled.button>
         Helpful
       </styled.button>
        |
       <a
-        href="https://www.w3schools.com/html/"
+        href="#top"
         style={
           Object {
             "color": "#7a7a7a",
@@ -127,7 +131,7 @@ exports[`ReviewList should render correctly 1`] = `
       </a>
        |
       <a
-        href="https://www.w3schools.com/html/"
+        href="#top"
         style={
           Object {
             "color": "#7a7a7a",
@@ -137,26 +141,28 @@ exports[`ReviewList should render correctly 1`] = `
       >
         Report abuse
       </a>
-    </div>
+    </styled.div>
   </styled.div>
   <styled.div>
-    <img
-      alt="avatar"
-      height="30px"
-      src="https://s3.amazonaws.com/product-reviews-hr110/Icons/avatar.png"
-      width="30px"
-    />
-    Chris Tso
-    <div>
+    <styled.div>
+      <img
+        alt="avatar"
+        height="30px"
+        src="https://s3.amazonaws.com/product-reviews-hr110/Icons/avatar.png"
+        width="30px"
+      />
+      Reina Beer
+    </styled.div>
+    <styled.div>
       <img
         alt="stars"
         height="25px"
         src="https://s3.amazonaws.com/product-reviews-hr110/Icons/stars.png"
       />
-      <b>
+      <styled.button>
          Quod soluta quas ipsam autem dolor libero dolor qui repudiandae.
-      </b>
-    </div>
+      </styled.button>
+    </styled.div>
     <div>
       September 18, 2018
     </div>
@@ -166,13 +172,13 @@ exports[`ReviewList should render correctly 1`] = `
     <div>
       888 people found this helpful
     </div>
-    <div>
+    <styled.div>
       <styled.button>
         Helpful
       </styled.button>
        |
       <a
-        href="https://www.w3schools.com/html/"
+        href="#top"
         style={
           Object {
             "color": "#7a7a7a",
@@ -184,7 +190,7 @@ exports[`ReviewList should render correctly 1`] = `
       </a>
        |
       <a
-        href="https://www.w3schools.com/html/"
+        href="#top"
         style={
           Object {
             "color": "#7a7a7a",
@@ -194,7 +200,7 @@ exports[`ReviewList should render correctly 1`] = `
       >
         Report abuse
       </a>
-    </div>
+    </styled.div>
   </styled.div>
 </div>
 `;

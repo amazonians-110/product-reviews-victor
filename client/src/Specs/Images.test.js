@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import Images from './Images';
+import Images from '../components/Reviews/Images/Images';
 
 // eslint-disable-next-line no-undef
 describe('Images', () => {

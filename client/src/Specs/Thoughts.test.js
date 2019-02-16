@@ -3,11 +3,11 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import WriteReview from './WriteReview';
+import Thoughts from '../components/Sidebar/Thoughts/Thoughts';
 
-describe('WriteReview', () => {
+describe('Thoughts', () => {
   it('should render correctly', () => {
-    const component = shallow(<WriteReview />);
+    const component = shallow(<Thoughts />);
 
     expect(component).toMatchSnapshot();
   });

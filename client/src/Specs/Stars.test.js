@@ -3,11 +3,11 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import Feature from './Feature';
+import Stars from '../components/Sidebar/Stars/Stars';
 
-describe('Feature', () => {
+describe('Stars', () => {
   it('should render correctly', () => {
-    const component = shallow(<Feature />);
+    const component = shallow(<Stars />);
 
     expect(component).toMatchSnapshot();
   });
