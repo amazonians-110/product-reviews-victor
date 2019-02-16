@@ -61,7 +61,7 @@ class Thoughts extends React.Component {
         <Borderbox>Share your thoughts with other customers</Borderbox>
 
         <Button>
-          <a href="https://www.w3schools.com/html/" style={{ textDecoration: 'none', color: 'black' }}>Write a customer review</a>
+          <a href="#top" style={{ textDecoration: 'none', color: 'black' }}>Write a customer review</a>
         </Button>
       </Border>
     );

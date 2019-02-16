@@ -58,7 +58,7 @@ class Images extends React.Component {
           <Pic src="http://lorempixel.com/640/480/sports" alt="sports" height="144" width="144" />
           <Pic src="http://lorempixel.com/640/480/transport" alt="transportation" height="144" width="144" />
         </div>
-        <Text href="https://www.w3schools.com/html/">See all customer images</Text>
+        <Text href="#top">See all customer images</Text>
       </div>
     );
   }

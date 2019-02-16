@@ -8,7 +8,8 @@ import styled from 'styled-components';
 const Links = styled.a`
 color: #0066c0;
 display: inline block;
-padding: 2px;
+padding: 5px 10px 5px 10px;
+text-decoration: none;
 :hover {
   text-decoration: underline;
   color: #c60;
@@ -87,7 +88,6 @@ display: inline-block;
   visibility: visible;
 }
 `;
-
 
 class Stars extends React.Component {
   constructor(props) {

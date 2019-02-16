@@ -60,6 +60,11 @@ margin-top: 7px;
 margin-bottom: 7px;
 `;
 
+const WrapButton = styled.div`
+display: flex;
+justify-content: space-between;
+`;
+
 class Interests extends React.Component {
   constructor(props) {
     super(props);
@@ -89,9 +94,10 @@ class Interests extends React.Component {
         </Descriptor>
         <Descriptor style={{ textDecoration: 'none', color: '#7a7a7a' }}>
           Is this feature helpful?
-
-          <Button>Yes</Button>
-          <Button>No</Button>
+          <WrapButton>
+            <Button>Yes</Button>
+            <Button>No</Button>
+          </WrapButton>
         </Descriptor>
       </Border>
     );

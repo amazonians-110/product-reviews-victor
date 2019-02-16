@@ -86,7 +86,7 @@ class ReviewList extends React.Component {
                 max-width="100%"
                 display="block"
               />
-              Victor Liu
+              Colleen Marquardt
             </Starbox>
             <Starbox>
               <img src="https://s3.amazonaws.com/product-reviews-hr110/Icons/stars.png" alt="stars" height="25px" />
@@ -113,13 +113,13 @@ class ReviewList extends React.Component {
         <Reviews>
           <Starbox>
             <img src="https://s3.amazonaws.com/product-reviews-hr110/Icons/avatar.png" height="30px" width="30px" alt="avatar" />
-            Andrew Mitchell
+            Ms. Calista Buckridge
           </Starbox>
           <Starbox>
             <img src="https://s3.amazonaws.com/product-reviews-hr110/Icons/stars.png" alt="stars" height="25px" />
             <Title> Quod soluta quas ipsam autem dolor libero dolor qui repudiandae.</Title>
           </Starbox>
-          <div>September 18, 2018</div>
+          <div>August 9, 2018</div>
           <p>
             "Pariatur dolorum voluptate commodi iusto omnis alias sed enim rem. Quis omnis ipsam
              aliquid dolores. Tempore consequuntur dolor est excepturi. Cum et doloremque aut as
@@ -139,7 +139,7 @@ class ReviewList extends React.Component {
         <Reviews>
           <Starbox>
             <img src="https://s3.amazonaws.com/product-reviews-hr110/Icons/avatar.png" height="30px" width="30px" alt="avatar" />
-          Chris Tso
+            Reina Beer
           </Starbox>
           <Starbox>
             <img src="https://s3.amazonaws.com/product-reviews-hr110/Icons/stars.png" alt="stars" height="25px" />
