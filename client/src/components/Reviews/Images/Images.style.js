@@ -24,3 +24,16 @@ text-align: left;
 export const Pic = styled.img`
   margin: 2.5px;
 `;
+
+export const SeeImages = styled.button`
+  color: #0066c0;
+  font-size: 13px 
+  text-Decoration: none;
+  :hover {
+    text-decoration: underline;
+    color: #c60;
+  }
+  border: none;
+  outline: none;
+  padding: 0;
+`;
