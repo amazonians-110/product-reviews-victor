@@ -16,6 +16,7 @@ class Images extends React.Component {
     this.state = {
       images: [],
       isOpen: false,
+      refresh: false,
     };
     this.toggleModal = this.toggleModal.bind(this);
   }
@@ -27,7 +28,9 @@ class Images extends React.Component {
         for (let i = 0; i < res.data[0].images.length; i += 1) {
           this.state.images.push(<img src={res.data[0].images[i]} height="120" width="120" alt="test" key={i} style={{ margin: '2.5px' }} />);
         }
-        console.log(this.state.images);
+        this.setState({
+          refresh: true,
+        });
       });
   }
 
@@ -36,12 +39,12 @@ class Images extends React.Component {
       isOpen: !this.state.isOpen,
     });
   }
-
+  
   render() {
     return (
       <div>
         <Title>Customer Images</Title>
-        <div id="app">
+        <div id="app2">
           <div>
             {this.state.images}
           </div>
@@ -57,7 +60,7 @@ class Images extends React.Component {
             <Pic src="http://lorempixel.com/640/480/cats" alt="cat" height="120" width="120" />
             <Pic src="http://lorempixel.com/640/480/people" alt="sports" height="120" width="120" />
             <Pic src="http://lorempixel.com/640/480/nature" alt="transportation" height="120" width="120" />
-            <Pic src="http://lorempixel.com/640/480/food" alt="food" height="120" width="120" />
+            <Pic src="http://lorempixel.com/640/480/cats" alt="food" height="120" width="120" />
             <Pic src="http://lorempixel.com/640/480/cats" alt="cat" height="120" width="120" />
             <Pic src="http://lorempixel.com/640/480/cats" alt="sports" height="120" width="120" />
             <Pic src="http://lorempixel.com/640/480/transport" alt="transportation" height="120" width="120" />

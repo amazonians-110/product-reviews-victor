@@ -51,9 +51,8 @@ const generateImages = () => {
   return imgs;
 };
 
-
 for (let i = 1; i <= 100; i += 1) {
-  for (let j = 1; j <= Math.floor(Math.random() * 5) + 1; j += 1) {
+  for (let j = 3; j <= Math.floor(Math.random() * 6) + 1; j += 1) {
     const review_instance = new Review({
       product_id: i,
       category: data.category[Math.floor(Math.random() * data.category.length)],
