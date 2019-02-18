@@ -1,15 +1,5 @@
 import styled from 'styled-components';
 
-export const Text = styled.a`
-  color: #0066c0;
-  font-size: 13px 
-  text-Decoration: none;
-  :hover {
-    text-decoration: underline;
-    color: #c60;
-  }
-`;
-
 export const Title = styled.button`
 font-weight: bolder;
 font-size: 17px;
