@@ -14,7 +14,7 @@ justify-content: space-between;
 font-family: 'Lato', sans-serif;
 `;
 
-class ProductReviews extends React.Component {
+class App extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -29,5 +29,4 @@ class ProductReviews extends React.Component {
   }
 }
 
-export default ProductReviews;
-
+export default App;
