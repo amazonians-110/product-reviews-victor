@@ -18,7 +18,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "postinstall" : "webpack --mode production && node ./server/index.js"
+    "postinstall": "webpack --mode production && node ./server/index.js"
   },
   "jest": {
     "snapshotSerializers": [
@@ -31,6 +31,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
     "css-loader": "^2.1.0",
     "dotenv": "^6.2.0",
     "express": "^4.16.4",

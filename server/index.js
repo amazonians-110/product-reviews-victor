@@ -1,11 +1,13 @@
 /* eslint-disable prefer-destructuring */
 const express = require('express');
+const cors = require('cors');
 const bodyParser = require('body-parser');
 const path = require('path');
 const grabProduct = require('../database/index.js').grabProduct;
 
 const app = express();
 
+app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
