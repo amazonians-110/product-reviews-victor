@@ -41,7 +41,7 @@ class Images extends React.Component {
       isOpen: !this.state.isOpen,
     });
   }
-  
+ 
   render() {
     return (
       <div>
