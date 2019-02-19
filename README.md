@@ -18,7 +18,7 @@ Create a UI clone of Amazon's item detail page.
 
 ## Usage
 
-> Some usage instructions
+> npm postinstall
 
 ## Requirements
 
