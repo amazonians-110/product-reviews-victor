@@ -22,9 +22,11 @@ class Images extends React.Component {
   }
 
   componentDidMount() {
-    axios.get('/product/4')
+    const full_url = document.URL; 
+    const url_array = full_url.split('/') 
+    const lastSegment = url_array[url_array.length-2];    
+    axios.get(`http://localhost:3008/product/${lastSegment}/review`)
       .then((res) => {
-        // this.setState({ images: res.data[0].images });
         for (let i = 0; i < res.data[0].images.length; i += 1) {
           this.state.images.push(<img src={res.data[0].images[i]} height="120" width="120" alt="test" key={i} style={{ margin: '2.5px' }} />);
         }

@@ -11,9 +11,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 const port = 3008;
 
-app.use(express.static(`${__dirname}/../client/dist`));
+app.use('/product/:id', express.static(`${__dirname}/../client/dist`));
 
-app.get('/product/:id', (req, res) => {
+app.get('/product/:id/review', (req, res) => {
   const id = req.params.id;
   grabProduct(id, (err, num) => {
     if (err) {
