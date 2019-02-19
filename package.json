@@ -18,7 +18,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "postinstall" : "webpack --mode production && nodemon ./server/index.js"
+    "postinstall" : "webpack --mode production && node ./server/index.js"
   },
   "jest": {
     "snapshotSerializers": [
