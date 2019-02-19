@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unused-state */
 /* eslint-disable react/jsx-one-expression-per-line */
 /* eslint-disable react/button-has-type */
 /* eslint-disable react/no-unescaped-entities */
@@ -6,12 +7,43 @@
 import React from 'react';
 import { Button, Select, Reviews, Title, Starbox, Space } from './ReviewList.style';
 
+const axios = require('axios');
+
 class ReviewList extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      reviewers: [],
+      reviewTitle: [],
+      review: [],
+      helpful: [],
+      datePosted: [],
+      done: false,
+    };
+  }
+
+  componentDidMount() {
+    const full_url = document.URL; 
+    const url_array = full_url.split('/') 
+    const lastSegment = url_array[url_array.length-2];    
+    axios.get(`http://localhost:3008/product/${lastSegment}/review`)
+      .then((res) => {
+        for (let i = 0; i < res.data.length; i += 1) {
+          this.state.reviewers.push(res.data[i].reviewer);
+          this.state.reviewTitle.push(res.data[i].review_title);
+          this.state.review.push(res.data[i].review);
+          this.state.helpful.push(res.data[i].helpful_counter);
+          this.state.datePosted.push(res.data[i].created_at);
+        }
+        this.setState({ done: true });
+      });
+  }
 
   render() {
+    const { reviewers, reviewTitle, review , helpful, datePosted } = this.state;
     return (
       <div>
-        <Title>Showing 1-8 of 453 reviews</Title>
+        <Title>Showing 1-3 of 453 reviews</Title>
         <div>
           <Select name="reviews">
             <option value="Top Reviews">Top Reviews</option>
@@ -30,21 +62,18 @@ class ReviewList extends React.Component {
                 max-width="100%"
                 display="block"
               />
-              Colleen Marquardt
+              {reviewers[0]}
             </Starbox>
             <Starbox>
               <img src="https://s3.amazonaws.com/product-reviews-hr110/Icons/stars.png" alt="stars" height="25px" />
-              <Title> Quod soluta quas ipsam autem dolor libero dolor qui repudiandae.</Title>
+              <Title> {reviewTitle[0]} </Title>
             </Starbox>
-            <div>September 18, 2018</div>
+            <div> {datePosted[0]} </div>
             <p>
-            "Pariatur dolorum voluptate commodi iusto omnis alias sed enim rem. Quis omnis ipsam
-             aliquid dolores. Tempore consequuntur dolor est excepturi. Cum et doloremque aut as
-             Id voluptatem sint. Labore vero perferendis omnis voluptatem.,
-            "revtitleiew_": "Quod soluta quas ipsam autem dolor libero dolor qui repudiandae."
+              { review[0] }
             </p>
             <div>
-              301 people found this helpful
+              {helpful[0]} people found this helpful
             </div>
             <Space>
               <Button>Helpful</Button> |
@@ -57,21 +86,16 @@ class ReviewList extends React.Component {
         <Reviews>
           <Starbox>
             <img src="https://s3.amazonaws.com/product-reviews-hr110/Icons/avatar.png" height="30px" width="30px" alt="avatar" />
-            Ms. Calista Buckridge
+            {reviewers[1]}
           </Starbox>
           <Starbox>
             <img src="https://s3.amazonaws.com/product-reviews-hr110/Icons/stars.png" alt="stars" height="25px" />
-            <Title> Quod soluta quas ipsam autem dolor libero dolor qui repudiandae.</Title>
+            <Title> {reviewTitle[1]} </Title>
           </Starbox>
-          <div>August 9, 2018</div>
-          <p>
-            "Pariatur dolorum voluptate commodi iusto omnis alias sed enim rem. Quis omnis ipsam
-             aliquid dolores. Tempore consequuntur dolor est excepturi. Cum et doloremque aut as
-             Id voluptatem sint. Labore vero perferendis omnis voluptatem.,
-            "review_title": "Quod soluta quas ipsam autem dolor libero dolor qui repudiandae."
-          </p>
+          <div> {datePosted[1]} </div>
+          { review[1] }
           <div>
-              107 people found this helpful
+            {helpful[1]} people found this helpful
           </div>
           <Space>
             <Button>Helpful</Button> |
@@ -83,21 +107,18 @@ class ReviewList extends React.Component {
         <Reviews>
           <Starbox>
             <img src="https://s3.amazonaws.com/product-reviews-hr110/Icons/avatar.png" height="30px" width="30px" alt="avatar" />
-            Reina Beer
+            {reviewers[2]}
           </Starbox>
           <Starbox>
             <img src="https://s3.amazonaws.com/product-reviews-hr110/Icons/stars.png" alt="stars" height="25px" />
-            <Title> Quod soluta quas ipsam autem dolor libero dolor qui repudiandae.</Title>
+            <Title> {reviewTitle[2]} </Title>
           </Starbox>
-          <div>September 18, 2018</div>
+          <div> {datePosted[2]} </div>
           <p>
-          "Pariatur dolorum voluptate commodi iusto omnis alias sed enim rem. Quis omnis ipsam
-            aliquid dolores. Tempore consequuntur dolor est excepturi. Cum et doloremque aut as
-            Id voluptatem sint. Labore vero perferendis omnis voluptatem.,
-          "review_title": "Quod soluta quas ipsam autem dolor libero dolor qui repudiandae."
+            { review[2] }
           </p>
           <div>
-              888 people found this helpful
+            {helpful[2]} people found this helpful
           </div>
           <Space>
             <Button>Helpful</Button> |
