@@ -10,7 +10,7 @@ const LeftRight = styled.div`
 display: flex;
 flex-direction: row;
 align-items: stretch;
-justify-content: space-between;
+justify-content: flex-start;
 font-family: 'Lato', sans-serif;
 `;
 

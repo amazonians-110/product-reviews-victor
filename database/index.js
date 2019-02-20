@@ -44,10 +44,14 @@ const data = {
 
 const generateImages = () => {
   const imgs = [];
-  const num = Math.floor(Math.random() * 10);
-  for (let i = 0; i < num; i += 1) {
-    imgs.push(faker.image.food());
-  }
+  // const num = Math.floor(Math.random() * 10);
+  // for (let i = 0; i < num; i += 1) {
+  //   imgs.push(faker.image.food());
+  // }
+  imgs.push(faker.image.food());
+  imgs.push(faker.image.cats());
+  imgs.push(faker.image.animals());
+  imgs.push(faker.image.nature());
   return imgs;
 };
 
