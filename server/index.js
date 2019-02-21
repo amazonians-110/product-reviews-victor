@@ -15,7 +15,7 @@ const port = 3008;
 
 app.use('/product/:id', express.static(`${__dirname}/../client/dist`));
 
-app.get('/product/:id/review', (req, res) => {
+app.get('/product/:id', (req, res) => {
   const id = req.params.id;
   grabProduct(id, (err, num) => {
     if (err) {
@@ -25,4 +25,4 @@ app.get('/product/:id/review', (req, res) => {
   });
 });
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`));
+app.listen(port, () => console.log(`Now listening on port ${port}!`));

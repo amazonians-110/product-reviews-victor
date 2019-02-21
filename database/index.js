@@ -5,7 +5,6 @@ const faker = require('faker');
 
 require('dotenv').config({ path: '../.env' });
 
-console.log(process.env.MONGOLAB_URI);
 mongoose.connect('mongodb://victor:victor123@ds125385.mlab.com:25385/products', { useNewUrlParser: true });
 const db = mongoose.connection;
 
@@ -33,7 +32,7 @@ const reviewSchema = new Schema({
 const Review = mongoose.model('Review', reviewSchema);
 
 Review.deleteMany({}, () => {
-  console.log('Database cleared. Ready for inserting');
+  console.log('Database running');
 });
 
 const data = {

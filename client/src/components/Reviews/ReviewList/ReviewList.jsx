@@ -1,3 +1,4 @@
+/* eslint-disable react/destructuring-assignment */
 /* eslint-disable react/no-unused-state */
 /* eslint-disable react/jsx-one-expression-per-line */
 /* eslint-disable react/button-has-type */
@@ -23,10 +24,10 @@ class ReviewList extends React.Component {
   }
 
   componentDidMount() {
-    const full_url = document.URL; 
-    const url_array = full_url.split('/') 
-    const lastSegment = url_array[url_array.length-1];    
-    axios.get(`http://localhost:3008/product/${lastSegment}/review`)
+    const fullUrl = document.URL;
+    const urlArray = fullUrl.split('/');
+    const lastSegment = urlArray[urlArray.length - 2];
+    axios.get(`http://localhost:3008/product/${lastSegment}`)
       .then((res) => {
         for (let i = 0; i < res.data.length; i += 1) {
           this.state.reviewers.push(res.data[i].reviewer);
