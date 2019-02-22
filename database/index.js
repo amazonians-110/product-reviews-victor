@@ -43,10 +43,6 @@ const data = {
 
 const generateImages = () => {
   const imgs = [];
-  // const num = Math.floor(Math.random() * 10);
-  // for (let i = 0; i < num; i += 1) {
-  //   imgs.push(faker.image.food());
-  // }
   imgs.push(faker.image.food());
   imgs.push(faker.image.cats());
   imgs.push(faker.image.animals());
@@ -54,8 +50,8 @@ const generateImages = () => {
   return imgs;
 };
 
-for (let i = 1; i <= 100; i += 1) {
-  for (let j = 3; j <= Math.floor(Math.random() * 6) + 1; j += 1) {
+for (let i = 0; i <= 100; i += 1) {
+  for (let j = 0; j <= Math.floor(Math.random() * 6) + 1; j += 1) {
     const review_instance = new Review({
       product_id: i,
       category: data.category[Math.floor(Math.random() * data.category.length)],
