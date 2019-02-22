@@ -24,10 +24,9 @@ class Images extends React.Component {
   componentDidMount() {
     const fullUrl = document.URL;
     const urlArray = fullUrl.split('/');
-    const lastSegment = urlArray[urlArray.length - 2];
-    axios.get(`http://localhost:3008/product/${lastSegment}`)
+    const lastSegment = urlArray[urlArray.length - 1];
+    axios.get(`http://localhost:3008/api/product/${lastSegment}`)
       .then((res) => {
-        console.log('this is res', res);
         for (let i = 0; i < res.data[0].images.length; i += 1) {
           this.state.images.push(<img src={res.data[0].images[i]} height="120" width="120" alt="test" key={i} style={{ margin: '2.5px' }} />);
         }

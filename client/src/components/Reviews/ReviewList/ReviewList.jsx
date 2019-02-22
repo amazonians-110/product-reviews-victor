@@ -26,8 +26,8 @@ class ReviewList extends React.Component {
   componentDidMount() {
     const fullUrl = document.URL;
     const urlArray = fullUrl.split('/');
-    const lastSegment = urlArray[urlArray.length - 2];
-    axios.get(`http://localhost:3008/product/${lastSegment}`)
+    const lastSegment = urlArray[urlArray.length - 1];
+    axios.get(`http://localhost:3008/api/product/${lastSegment}`)
       .then((res) => {
         for (let i = 0; i < res.data.length; i += 1) {
           this.state.reviewers.push(res.data[i].reviewer);

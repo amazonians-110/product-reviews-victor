@@ -15,7 +15,8 @@ const port = 3008;
 
 app.use(express.static(`${__dirname}/../client/dist`));
 
-app.get('/product/:id', (req, res) => {
+// api will also deliver the static files. product/:id serves my data
+app.get('/api/product/:id', (req, res) => {
   const id = req.params.id;
   grabProduct(id, (err, num) => {
     if (err) {
@@ -25,6 +26,7 @@ app.get('/product/:id', (req, res) => {
   });
 });
 
+// the index.html
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '../client/dist', 'index.html'));
 });
