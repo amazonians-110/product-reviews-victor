@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 const port = 3008;
 
-app.use('/product/:id', express.static(`${__dirname}/../client/dist`));
+app.use(express.static(`${__dirname}/../client/dist`));
 
 app.get('/product/:id', (req, res) => {
   const id = req.params.id;
@@ -23,6 +23,10 @@ app.get('/product/:id', (req, res) => {
     }
     res.status(200).send(num);
   });
+});
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../client/dist', 'index.html'));
 });
 
 app.listen(port, () => console.log(`Now listening on port ${port}!`));
