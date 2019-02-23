@@ -25,9 +25,8 @@ class Images extends React.Component {
     const fullUrl = document.URL;
     const urlArray = fullUrl.split('/');
     const lastSegment = urlArray[urlArray.length - 1];
-    axios.get(`http://ec2-34-212-75-218.us-west-2.compute.amazonaws.com/api/product/${lastSegment}`)
+    axios.get(`http://ec2-34-211-238-169.us-west-2.compute.amazonaws.com/api/product/${lastSegment}`)
       .then((res) => {
-        console.log(res);
         for (let i = 0; i < res.data[0].images.length; i += 1) {
           this.state.images.push(<img src={res.data[0].images[i]} height="120" width="120" alt="test" key={i} style={{ margin: '2.5px' }} />);
         }
@@ -59,21 +58,21 @@ class Images extends React.Component {
             show={this.state.isOpen}
             onClose={this.toggleModal}
           >
+            <Pic src="http://lorempixel.com/640/480/abstract" alt="abstract" height="120" width="120" />
+            <Pic src="http://lorempixel.com/640/480/animals" alt="animals" height="120" width="120" />
+            <Pic src="http://lorempixel.com/640/480/business" alt="business" height="120" width="120" />
+            <Pic src="http://lorempixel.com/640/480/cats" alt="cats" height="120" width="120" />
+            <Pic src="http://lorempixel.com/640/480/city" alt="city" height="120" width="120" />
             <Pic src="http://lorempixel.com/640/480/food" alt="food" height="120" width="120" />
-            <Pic src="http://lorempixel.com/640/480/cats" alt="cat" height="120" width="120" />
-            <Pic src="http://lorempixel.com/640/480/people" alt="sports" height="120" width="120" />
-            <Pic src="http://lorempixel.com/640/480/nature" alt="transportation" height="120" width="120" />
-            <Pic src="http://lorempixel.com/640/480/cats" alt="food" height="120" width="120" />
-            <Pic src="http://lorempixel.com/640/480/cats" alt="cat" height="120" width="120" />
-            <Pic src="http://lorempixel.com/640/480/cats" alt="sports" height="120" width="120" />
-            <Pic src="http://lorempixel.com/640/480/transport" alt="transportation" height="120" width="120" />
-            <Pic src="http://lorempixel.com/640/480/fashion" alt="food" height="120" width="120" />
-            <Pic src="http://lorempixel.com/640/480/nightlife" alt="cat" height="120" width="120" />
-            <Pic src="http://lorempixel.com/640/480/cats" alt="sports" height="120" width="120" />
-            <Pic src="http://lorempixel.com/640/480/cats" alt="transportation" height="120" width="120" />
-            <Pic src="http://lorempixel.com/640/480/food" alt="food" height="120" width="120" />
-            <Pic src="http://lorempixel.com/640/480/cats" alt="cat" height="120" width="120" />
-            <Pic src="http://lorempixel.com/640/480/people" alt="sports" height="120" width="120" />
+            <Pic src="http://lorempixel.com/640/480/nightlife" alt="nightlife" height="120" width="120" />
+            <Pic src="http://lorempixel.com/640/480/fashion" alt="fashion" height="120" width="120" />
+            <Pic src="http://lorempixel.com/640/480/people" alt="people" height="120" width="120" />
+            <Pic src="http://lorempixel.com/640/480/nature" alt="nature" height="120" width="120" />
+            <Pic src="http://lorempixel.com/640/480/sports" alt="sports" height="120" width="120" />
+            <Pic src="http://lorempixel.com/640/480/technics" alt="technics" height="120" width="120" />
+            <Pic src="http://lorempixel.com/640/480/transport" alt="transport" height="120" width="120" />
+            <Pic src="https://picsum.photos/120/120/?random" alt="random" />
+            <Pic src="https://picsum.photos/120/120?image=1080" alt="fruit" />
           </Modal>
         </div>
       </div>

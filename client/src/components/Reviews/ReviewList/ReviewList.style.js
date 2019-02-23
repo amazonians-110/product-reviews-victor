@@ -29,7 +29,8 @@ export const Select = styled.select`
 export const Reviews = styled.div`
   padding: 5px;
   line-height: 20px;
-  font-size: 13px;  
+  font-size: 13px;
+  max-width: 600px;  
 `;
 
 export const Title = styled.button`

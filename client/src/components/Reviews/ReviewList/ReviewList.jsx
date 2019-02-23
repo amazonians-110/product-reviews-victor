@@ -27,7 +27,7 @@ class ReviewList extends React.Component {
     const fullUrl = document.URL;
     const urlArray = fullUrl.split('/');
     const lastSegment = urlArray[urlArray.length - 1];
-    axios.get(`http://ec2-34-212-75-218.us-west-2.compute.amazonaws.com/api/product/${lastSegment}`)
+    axios.get(`http://ec2-34-211-238-169.us-west-2.compute.amazonaws.com/api/product/${lastSegment}`)
       .then((res) => {
         for (let i = 0; i < res.data.length; i += 1) {
           this.state.reviewers.push(res.data[i].reviewer);
@@ -70,7 +70,7 @@ class ReviewList extends React.Component {
               <Title> {reviewTitle[0]} </Title>
             </Starbox>
             <div> {datePosted[0]} </div>
-            <p>
+            <p width="auto">
               { review[0] }
             </p>
             <div>
@@ -94,7 +94,9 @@ class ReviewList extends React.Component {
             <Title> {reviewTitle[1]} </Title>
           </Starbox>
           <div> {datePosted[1]} </div>
-          { review[1] }
+          <p width="auto">
+            { review[1] }
+          </p>
           <div>
             {helpful[1]} people found this helpful
           </div>
@@ -115,7 +117,7 @@ class ReviewList extends React.Component {
             <Title> {reviewTitle[2]} </Title>
           </Starbox>
           <div> {datePosted[2]} </div>
-          <p>
+          <p width="auto">
             { review[2] }
           </p>
           <div>
