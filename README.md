@@ -1,5 +1,5 @@
 # Amazonians
-> Project description
+>
 Create a UI clone of Amazon's item detail page.
 
 ## Related Projects
